@@ -1,5 +1,44 @@
-	
-	
+$(document).ready(function(){
+
+		//handling navigation
+		if($("#"+window.location.hash.replace("#","")).length == 1){
+			$("[data-section = 'true']").hide();
+			presentation.switchSection(window.location.hash.replace("#",""));
+		}
+		$("[data-sectionswitch]").click(function(e){
+			presentation.switchSection($(this).data("sectionswitch"));
+			window.location.hash = $(this).data("sectionswitch");
+			return false;
+		});
+
+
+	//grabbing code pieces to show later on	
+		var codePieces = new Array();
+		$("[data-getcode]").each(function(index){
+			codePieces[$(this).attr("data-getcode")] = $("#"+$(this).attr("data-getcode")).html();							
+		});	
+			
+
+		
+		$("[data-getcode]").click(function(e){
+			$(this).attr("title","Click to get code");
+		
+			codeToShow = $.trim(htmlEncode(codePieces[$(this).data("getcode")])).replace(/\t/g, ' ');
+			$("#codeModal pre.prettyprint").html("<code>"+codeToShow+"</code>");
+			//prettyPrint();
+			$("#codeModal").modal("show");
+			
+			
+		});
+		
+		
+		
+		$("#selectAll").click(function(){
+			//$(".prettyprint").select();
+			SelectText("prettyprint");
+		});
+});
+
 	function htmlEncode(value){
 	  return $('<div/>').text(value).html();
 	}
@@ -24,66 +63,8 @@
 	    }
 	}
 
-	$(document).ready(function(){
 
-		if($("#"+window.location.hash.replace("#","")).length == 1){
-			$("[data-section = 'true']").hide();
-			obj.switchSection(window.location.hash.replace("#",""));
-		}
-		$("[data-sectionswitch]").click(function(e){
-			obj.switchSection($(this).data("sectionswitch"));
-			window.location.hash = $(this).data("sectionswitch");
-			return false;
-		});
-		$("[data-modal-open]").click(function(){
-			$("#"+$(this).data("modal-open")).modal("show");
-			return false;
-		});
-		
-
-		
-		//grabbing code pieces to show later on	
-		var codePieces = new Array();
-		$("[data-getcode]").each(function(index){
-			codePieces[$(this).attr("data-getcode")] = $("#"+$(this).attr("data-getcode")).html();							
-		});	
-			
-
-		
-		$("[data-getcode]").click(function(e){
-			$(this).attr("title","Click to get code");
-		
-			codeToShow = $.trim(htmlEncode(codePieces[$(this).data("getcode")])).replace(/\t/g, ' ');
-			$("#codeModal pre.prettyprint").html("<code>"+codeToShow+"</code>");
-			prettyPrint();
-			$("#codeModal").modal("show");
-			
-			
-		});
-		
-		
-		
-		$("#selectAll").click(function(){
-			//$(".prettyprint").select();
-			SelectText("prettyprint");
-		});
-		
-		
-		prettyPrint();
-
-	});
-	
-	
-	
-	
-
-
-
-	obj = ({
-	openModal: function(e){
-		$("#myModal").modal("show");
-		return false;
-	},
+	presentation = ({
 
 	switchSection : function(sectionName){
 		$("#navbar li").removeClass("active");

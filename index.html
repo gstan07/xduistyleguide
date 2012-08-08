@@ -12,11 +12,10 @@
 <!--</jQuery library>-->
 
 <!--<jQuery UI library>-->
-
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js"></script>
 <!--</jQuery UI library>-->
 <script src="components.js" type="text/javascript"></script>
-<script src="index.js" type="text/javascript"></script>
+<script src="presentation.js" type="text/javascript"></script>
 <!--<bootstrap JS components>-->
 <script src="bootstrap/js/bootstrap-dropdown.js" type="text/javascript"></script>
 <script src="bootstrap/js/bootstrap-modal.js" type="text/javascript"></script>
@@ -46,7 +45,7 @@
 	<script src="lib/chosen/chosen.jquery.min.js"></script>
 	<!--</dropdown component>-->
 	<!--<date range>-->
-	<!--<script type="text/javascript" src="lib/daterangepicker/js/date.js"></script>-->
+	<script type="text/javascript" src="lib/daterangepicker/js/date.js"></script>
 	<script type="text/javascript" src="lib/daterangepicker/js/daterangepicker.jQuery.js"></script>
 	<!--</date range>-->
 <!--</compoents JS>-->
@@ -177,7 +176,7 @@
 				  </li>
 
 				</ul>
-				<a href="#" class="btn btn-primary" data-modal-open = "downloadModal">How To Use</a>
+				<a href="#downloadModal" class="btn btn-primary" data-component = "modalTrigger">How To Use</a>
 			</div>
  		</div>
 </div>
@@ -362,7 +361,7 @@
 	<!--</modal to be open>-->
 
 	<!--<link that triggers the modal window>-->
-	<a href = "#" data-modal-open = "myModal">Click here to view this pod as a modal</a>
+	<a href = "#myModal" data-component = "modalTrigger">Click here to view this pod as a modal</a>
 	<!--</link that triggers the modal window>-->
 	</span>
 	<span class="getcode" data-getcode="gc_modals1"></span>
@@ -789,7 +788,7 @@
 	</div>
 
 	Examples:
-	<div><a href="#" data-modal-open = "gridexample1">A fluid grid in a modal pod</a></div>
+	<div><a href="#gridexample1" data-component = "modalTrigger">A fluid grid in a modal pod</a></div>
 	<div class="modal hide" id="gridexample1" style="width:600px">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -1342,7 +1341,7 @@ How we bind the filters to this table: <span class="getcode" data-getcode="gc_so
 <strong>Pod tabs</strong> <span class = "getcode" data-getcode = "gc_tabs1"></span>
 <br/>
 We use this type of tabs wherever there's a pod that needs this type of navigation. The tabs will be placed right bellow the pod header.  <!--<link that triggers the modal window>-->
- <a href="#" data-modal-open="podtabsexample">see example of placement</a>
+ <a href="#podtabsexample" data-component="modalTrigger">see example of placement</a>
  <!--</link that triggers the modal window>-->
 <br/><br/>
 	<span id="gc_tabs1">
@@ -1467,7 +1466,10 @@ We use this type of tabs wherever there's a pod that needs this type of navigati
 <div style = "display:none;padding:5px;" id = "daterange" data-section="true">
 	<h1 style = "margin-top:50px;">DateRange Picker</h1>
 	<br/><br/>
-	<input type="text" placeholder = "choose a date range" data-component = "daterange"/>
+	<span id="gc_daterange">
+		<input type="text" placeholder = "choose a date range" data-component = "daterange"/>
+	</span>
+	<soan class="getcode" data-getcode="gc_daterange"></span>
 </div>
 
 </body>

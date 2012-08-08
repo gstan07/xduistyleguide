@@ -3,6 +3,68 @@
 .ui-daterangepickercontain {
 	position: absolute;
 	z-index: 999;
+	.ui-icon-triangle-1-e{
+		border:1px solid red;
+		.icon-search;
+	}
+	.border-radius(@dataPodsBorderRadius);
+	background-color: #fff;
+	border:1px solid #ccc!important;
+	.box-shadow(3px 3px 5px #e1e1e1);
+	.ui-widget-content{
+		border:none;
+		border-radius:none;
+		li{
+			font-size:13px;
+			&.ui-corner-all{
+				border-radius:0px!important;
+			}
+			&.ui-state-hover,&.ui-state-active{
+				
+				.blueGradient;
+				a{
+					color:#fff!important
+				}
+			}
+		}
+		
+	}
+	.title-start,.title-end,.ui-datepicker-month,.ui-datepicker-year{
+		color:@grayDark;
+	}
+	.ui-datepicker-header{
+		background-color:#ececec!important;
+		border-radius:@buttonBorderRadius;
+		.gradientBar(#ececec, #ccc);
+		border:1px solid #ccc!important;
+	}
+	table.ui-datepicker-calendar{
+		a.ui-state-default{
+			border-color:#fff;
+			background-color: #fff;
+			&.ui-state-hover{
+				background-color:#ececec;
+			}
+			&.ui-state-active{
+				.blueGradient;
+				color:#fff;
+			}
+		}
+
+	}
+	.ui-widget-header,.ui-widget-content{
+		background-color:#fff;
+		border:none;
+		button{
+			.border-radius(@buttonBorderRadius);
+			.blueGradient;
+			color:#fff;
+			width:100px;
+			font-weight:normal;
+			padding:5px 0;
+		}
+	}
+
 }
 .ui-daterangepickercontain .ui-daterangepicker {
 	float: left;

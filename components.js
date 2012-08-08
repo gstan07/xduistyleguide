@@ -367,5 +367,12 @@ components = ({
 		},
 		daterange: function(el){
 			el.daterangepicker(); 
+		},
+		modalTrigger: function(el){
+			el.click(function(){
+				$(el.attr("href")).modal("show");	
+			});
+			
 		}
+
 	});
