@@ -25,7 +25,7 @@ $(document).ready(function(){
 		
 			codeToShow = $.trim(htmlEncode(codePieces[$(this).data("getcode")])).replace(/\t/g, ' ');
 			$("#codeModal pre.prettyprint").html("<code>"+codeToShow+"</code>");
-			//prettyPrint();
+			prettyPrint();
 			$("#codeModal").modal("show");
 			
 			
