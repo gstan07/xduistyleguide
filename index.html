@@ -162,6 +162,7 @@
 				       <li><a href = "#" data-sectionswitch = "filters">Filters</a></li>
 				       <li><a href = "#" data-sectionswitch = "tabs">Tabs</a></li>
 				       <li><a href = "#" data-sectionswitch = "daterange">DateRange Picker</a></li>
+				       <li><a href = "#" data-sectionswitch = "progress">Progress bars</a></li>
 				    </ul>
 				  </li>
 				  <li class="divider-vertical"></li>
@@ -1465,6 +1466,7 @@ We use this type of tabs wherever there's a pod that needs this type of navigati
 
 <div style = "display:none;padding:5px;" id = "daterange" data-section="true">
 	<h1 style = "margin-top:50px;">DateRange Picker</h1>
+	This component uses <a href="http://www.filamentgroup.com/lab/date_range_picker_using_jquery_ui_16_and_jquery_ui_css_framework/">jQuery UI daterange plugin</a>
 	<br/><br/>
 	<label for="daterange1">As a normal input:</label>
 	<span id="gc_daterange">
@@ -1486,6 +1488,112 @@ We use this type of tabs wherever there's a pod that needs this type of navigati
   	</span>
 
 <br><br>
+<div class="alert alert-error">
+  Currently, 2 rangepickers on one page won't play well together. We'll look to improve this soon.<br/>
+  <a href="http://www.filamentgroup.com/lab/date_range_picker_using_jquery_ui_16_and_jquery_ui_css_framework/">More info here</a>
+</div>
+</div>
+
+
+<div style = "display:none;padding:5px;" id = "progress" data-section="true">
+	<h1 style = "margin-top:50px;">Progress bars</h1>
+	<br/><br/>
+	<div class="divider">
+   		<span class="heading">Standard</span>
+  	</div>
+	<div style="width:400px">
+
+		Standard progress bar <span class = "getcode" data-getcode="gc_progress_1"></span>
+		<span id="gc_progress_1">
+		<div class="progress">
+  			<div class="bar" style="width: 60%;"></div>
+		</div>
+		</span>
+
+		Stripped progress bar <span class = "getcode" data-getcode="gc_progress_2"></span>
+		<span id="gc_progress_2">
+		<div class="progress progress-striped">
+  			<div class="bar" style="width: 30%;"></div>
+		</div>
+		</span>
+
+		Stripped animated progress bar <span class = "getcode" data-getcode="gc_progress_3"></span>
+		<span id="gc_progress_3">
+		<div class="progress progress-striped active">
+  			<div class="bar" style="width: 80%;"></div>
+		</div>
+		</span>
+
+	</div>
+	<br/><br/>
+	<div class="divider">
+   		<span class="heading">You can also use colors</span>
+  	</div>
+	<div style="width:400px">
+		Danger progress bar <span class = "getcode" data-getcode="gc_progress_4"></span>
+		<span id="gc_progress_4">
+		<div class="progress progress-danger">
+  			<div class="bar" style="width: 60%;"></div>
+		</div>
+		</span>
+
+		Danger Stripped progress bar <span class = "getcode" data-getcode="gc_progress_5"></span>
+		<span id="gc_progress_5">
+		<div class="progress progress-striped progress-danger">
+  			<div class="bar" style="width: 30%;"></div>
+		</div>
+		</span>
+
+		Danger Stripped animated progress bar
+		 <span class = "getcode" data-getcode="gc_progress_6"></span>
+		<span id="gc_progress_6">
+		<div class="progress progress-striped active progress-danger">
+  			<div class="bar" style="width: 80%;"></div>
+		</div>
+		</span>
+
+		Success progress bar <span class = "getcode" data-getcode="gc_progress_7"></span>
+		<span id="gc_progress_7">
+		<div class="progress progress-success">
+  			<div class="bar" style="width: 60%;"></div>
+		</div>
+		</span>
+
+		Success Stripped progress bar <span class = "getcode" data-getcode="gc_progress_8"></span>
+		<span id="gc_progress_8">
+		<div class="progress progress-striped progress-success">
+  			<div class="bar" style="width: 30%;"></div>
+		</div>
+		</span>
+
+		Success Stripped animated progress bar <span class = "getcode" data-getcode="gc_progress_9"></span>
+		<span id="gc_progress_9">
+		<div class="progress progress-striped active progress-success">
+  			<div class="bar" style="width: 80%;"></div>
+		</div>
+		</span>
+
+		Warning progress bar <span class = "getcode" data-getcode="gc_progress_10"></span>
+		<span id="gc_progress_10">
+		<div class="progress progress-warning">
+  			<div class="bar" style="width: 60%;"></div>
+		</div>
+		</span>
+
+		Warning Stripped progress bar <span class = "getcode" data-getcode="gc_progress_11"></span>
+		<span id="gc_progress_11">
+		<div class="progress progress-striped progress-warning">
+  			<div class="bar" style="width: 30%;"></div>
+		</div>
+		</span>
+
+		Warning Stripped animated progress bar <span class = "getcode" data-getcode="gc_progress_12"></span>
+		<span id="gc_progress_12">
+		<div class="progress progress-striped active progress-warning">
+  			<div class="bar" style="width: 80%;"></div>
+		</div>
+		</span>
+	</div>
 </div>
 
 </body>
