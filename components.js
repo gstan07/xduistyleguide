@@ -366,7 +366,25 @@ components = ({
 			
 		},
 		daterange: function(el){
-			el.daterangepicker(); 
+			
+			if($(el).attr("data-component-daterange-width") == "auto"){
+						
+						el_chars_num = $(el).val().length;
+						if(el_chars_num == 0){
+							el_chars_num = $(el).attr("placeholder").length;
+						}
+						$(el).width(el_chars_num*8-15);
+			}
+			
+			el.daterangepicker({
+				'onChange':function(){
+					if($(el).attr("data-component-daterange-width") == "auto"){
+
+						el_chars_num = $(el).val().length;
+						$(el).width((el_chars_num*8-15));
+					}
+				}
+			}); 
 		},
 		modalTrigger: function(el){
 			el.click(function(){

@@ -110,6 +110,32 @@
     i{
       margin-top:3px;
     }
+    [data-component='daterange']{
+      border:none;
+      background-color:#fff;
+      .box-shadow(none);
+      cursor:pointer;
+      width:auto;
+      position:relative;
+      font-weight: @semiboldWeight;
+      top:3px;
+      background-image:url("../img/downarrow.png");
+      background-repeat:no-repeat;
+      background-position: right 55%;
+      padding-right:20px!important;
+      &::-webkit-input-placeholder {
+         color: @grayDark;
+        font-weight: @semiboldWeight;
+      }
+
+      &:-moz-placeholder {  
+         color: @grayDark;
+        font-weight: @semiboldWeight;
+      } 
+
+    }
+
+    }
   }
   ul.curent_filters{
       list-style-type:none;

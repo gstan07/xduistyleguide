@@ -38,10 +38,38 @@
 		.gradientBar(#ececec, #ccc);
 		border:1px solid #ccc!important;
 	}
+	.ui-datepicker-prev{
+		padding:0!important;
+		border-radius:none;
+		top:2px;
+		left:2px;
+		cursor:pointer;
+	}
+	.ui-datepicker-next{
+		top:2px;
+		right:2px;
+		padding:0!important;
+		border-radius:none;
+		cursor:pointer;
+	}
+	.ui-datepicker-prev.ui-state-hover,.ui-datepicker-next.ui-state-hover{
+		background-color: transparent;
+		border:none;
+	}
+	.ui-icon.ui-icon-circle-triangle-w{
+		background-image:url("../img/glyphicons-halflings.png");
+		background-position:-264px -144px;
+	}
+	.ui-icon.ui-icon-circle-triangle-e{
+		background-image:url("../img/glyphicons-halflings.png");
+		background-position:-240px -144px;
+	}
 	table.ui-datepicker-calendar{
 		a.ui-state-default{
 			border-color:#fff;
 			background-color: #fff;
+			text-align: center!important;
+
 			&.ui-state-hover{
 				background-color:#ececec;
 			}
@@ -49,6 +77,7 @@
 				.blueGradient;
 				color:#fff;
 			}
+
 		}
 
 	}
@@ -56,13 +85,27 @@
 		background-color:#fff;
 		border:none;
 		button{
-			.border-radius(@buttonBorderRadius);
-			.blueGradient;
-			color:#fff;
-			width:100px;
-			font-weight:normal;
-			padding:5px 0;
+			font-weight:@semiboldWeight;
+			font-size:13px;
+			float:right;
+			clear:both;
+			margin-right:10px;
+			&.ui-state-hover{
+				font-weight:@semiboldWeight;
+				.btn;
+				.btn-primary;
+			}
+
 		}
+	}
+	.range-start,.range-end{
+		height:240px;
+		padding-top: 5px!important;
+
+	}
+	.ranges{
+		height:260px;
+		padding:0!important;
 	}
 
 }
