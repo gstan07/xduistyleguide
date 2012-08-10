@@ -391,6 +391,58 @@ components = ({
 				$(el.attr("href")).modal("show");	
 			});
 			
+		},
+		tagsinput: function(el){
+			
+   			options = {
+   				'width':'220px',
+   				'defaultText':'+ add tags',
+   			}
+   			if($(el).attr("data-component-autocomplete_url")){
+   				options["autocomplete_url"] = $(el).attr("data-component-autocomplete_url");		
+   			}
+   			console.log(options);
+
+			el.tagsInput(options);
+
+			//simulating focus on input
+			elid = $(el).attr("id");
+			
+			//clicking on the input should trigger container focus
+			$("#"+elid+"_tag").bind("focus click",function(e){
+				$(this).closest(".tagsinput").addClass("active");
+				e.stopPropagation();
+				
+			});
+			//$("input#"+elid+"_tag").attr("placeholder",$(this).attr("data-default"))
+			$("input#"+elid+"_tag").blur(function(e){
+				//$(this).attr("placeholder",$(this).attr("data-default"));
+				$(this).closest(".tagsinput").removeClass("active");
+				e.stopPropagation();
+
+			});
+			//clicking on the container should trigger container focus
+			$("#"+elid+"_tagsinput").click(function(e){
+				$(this).addClass("active");
+				
+				e.stopPropagation();
+			});
+
+			
+			//porting click from label to the new input
+			$("label[for='"+elid+"']").click(function(e){
+				e.stopPropagation();
+				e.preventDefault();
+
+
+				$("input#"+$(this).attr("for")+"_tag").focus();
+				
+				
+			});
+			$("body").bind("click.tagsinput",function(e){
+				$(".tagsinput").removeClass("active");
+			});
+
 		}
 
 	});

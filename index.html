@@ -14,8 +14,9 @@
 <!--<jQuery UI library>-->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js"></script>
 <!--</jQuery UI library>-->
-<script src="components.js" type="text/javascript"></script>
 <script src="presentation.js" type="text/javascript"></script>
+<script src="components.js" type="text/javascript"></script>
+
 <!--<bootstrap JS components>-->
 <script src="bootstrap/js/bootstrap-dropdown.js" type="text/javascript"></script>
 <script src="bootstrap/js/bootstrap-modal.js" type="text/javascript"></script>
@@ -48,6 +49,9 @@
 	<!--<script type="text/javascript" src="lib/daterangepicker/js/date.js"></script>-->
 	<script type="text/javascript" src="lib/daterangepicker/js/daterangepicker.jQuery.js"></script>
 	<!--</date range>-->
+	<!--<tags input component>-->
+	<script type="text/javascript" src="lib/tags/jquery.tagsinput.js"></script>
+	<!--</tags input component>-->
 <!--</compoents JS>-->
 
 
@@ -163,6 +167,7 @@
 				       <li><a href = "#" data-sectionswitch = "tabs">Tabs</a></li>
 				       <li><a href = "#" data-sectionswitch = "daterange">DateRange Picker</a></li>
 				       <li><a href = "#" data-sectionswitch = "progress">Progress bars</a></li>
+				       <li><a href = "#" data-sectionswitch = "tags">Tags Input</a></li>
 				    </ul>
 				  </li>
 				  <li class="divider-vertical"></li>
@@ -1596,5 +1601,28 @@ We use this type of tabs wherever there's a pod that needs this type of navigati
 	</div>
 </div>
 
+<div style = "display:none;padding:5px;" id = "tags" data-section="true">
+	<h1 style = "margin-top:50px;">Tags Input</h1>
+	This component provides a handy way for tags input. It uses <a href="https://github.com/xoxco/jQuery-Tags-Input">jQuery tags input plugin from xoxoco</a>
+	<br/>
+	<br/>
+	<span class="getcode" data-getcode = "gc_tagsinput1"></span>
+	<label for = "tagsinput1">
+		Simple tag input element:
+	</label>
+	<span id="gc_tagsinput1">
+		<input id = "tagsinput1" type="text" data-component = "tagsinput"/>
+	</span>
+	<br/>
+	
+	<br/>
+	<span class="getcode" data-getcode = "gc_tagsinput2"></span><label for = "tagsinput2">
+		Tag input element with autocomplete :
+	</label> <a target = "blank" href="lib/tags/autocomplete.mock.txt">see the autocomplete file</a>
+	<span id="gc_tagsinput2">
+	<input data-component-autocomplete_url = "lib/tags/autocomplete.mock.txt" id = "tagsinput2" type="text" data-component = "tagsinput"/>
+</span>
+	
+</div>
 </body>
 </html>
