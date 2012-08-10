@@ -69,6 +69,16 @@ components = ({
 			if($(el).attr("data-component-dropdown-search") == "disabled"){
 				$("#"+$(el).attr("id")+"_chzn .chzn-search").hide();	
 			}
+			if($(el).attr("data-component-dropdown-width")){
+				elid = $(el).attr("id");
+				w = $(el).attr("data-component-dropdown-width");
+				$("#"+elid+"_chzn").attr("style","width:"+w+"px!important");
+				$("#"+elid+"_chzn .chzn-drop").css({
+					"border-top":"1px solid #898989",
+					"border-top-right-radius":2
+				});
+				
+			}
 			
 
 		},
@@ -401,7 +411,7 @@ components = ({
    			if($(el).attr("data-component-autocomplete_url")){
    				options["autocomplete_url"] = $(el).attr("data-component-autocomplete_url");		
    			}
-   			console.log(options);
+
 
 			el.tagsInput(options);
 

@@ -84,7 +84,10 @@
   .quiet .chzn-single{
     background-image:none;
     background-color:transparent;
-    border:none;
+
+     border: 1px solid rgba(255, 0, 0, 0)!important;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     .box-shadow(none);
     &:focus{
       outline:none;
@@ -97,15 +100,17 @@
 
 .pasive_gradient;
 
-    .box-shadow(none);
-    padding: 0 0 0 7px;
+    box-shadow : 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
+
+    //padding: 0 0 0 8px;
+    border-color: #aaaaaa!important;
     //this is to compensate the absence of the border
-    height:21px!important;
+    height:23px!important;
     span{
-      margin-top:-1px;
+      //margin-top:-1px;
     }
     div b{
-      margin-top:-1px;
+     // margin-top:-1px;
     }
 
   }
