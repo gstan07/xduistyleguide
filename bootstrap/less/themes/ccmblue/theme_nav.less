@@ -1,6 +1,7 @@
 // Give the tabs something to sit on
 .nav-tabs {
   border-bottom: 1px solid #ccc;
+
 }
 .nav > li > a:hover {
   text-decoration: none;
@@ -33,4 +34,33 @@
 		color:@white;
 		border:none;
 	}
+}
+.nav-tabs.wizard > .active{
+
+height:20px;
+}
+.nav-tabs.wizard > .active > a{
+  background-image:none;
+    background-color:@btnPrimaryBackgroundHighlight;
+    margin-right:15px;
+    padding-left:20px;
+    padding-right:0px;
+    
+
+  &:after{
+    content:"";
+
+    float:right;
+
+    display:inline-block;
+    position:relative;
+    top:-8px;
+    left:17px;
+    width: 0; 
+  height: 0; 
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  
+  border-left: 17px solid @btnPrimaryBackgroundHighlight;
+  }
 }
