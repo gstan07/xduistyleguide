@@ -464,6 +464,7 @@ components = ({
 				else{
 					$("[data-component-grid-element ='rowcheck']",el).attr('checked', false);
 				}
+				checkBulkActions();
 			});
 
 			//adding inline editable functionality
@@ -504,6 +505,20 @@ components = ({
 				e.stopPropagation();
 				e.preventDefault();
 			});
+			$("[data-component-grid-element = 'rowcheck']",el).change(function(){
+				checkBulkActions();
+			});
+			
+			//enabling bulk actions
+			var checkBulkActions = function(el){
+				if($("[data-component-grid-element = 'rowcheck']:checked",el).length > 0){
+					$("[data-component-grid-element = 'bulk-actions-group'] .btn.disabled",el).removeClass("disabled").addClass("btn-primary");
+				}
+				else{
+					$("[data-component-grid-element = 'bulk-actions-group'] .btn.btn-primary",el).removeClass("btn-[rimary").addClass("disabled");
+				}	
+			}
+			
 		}
 
 	});
