@@ -39,6 +39,13 @@
   tbody tr:hover th {
     background-color: @tableBackgroundHover;
   }
+  [data-component-grid-element="inline-editable"]{
+    //display:inline-block;
+    //padding:3px;
+    &:hover{
+      //outline:1px dotted #ccc;
+    }
+  }
   tfoot{
     .chzn-container{
       vertical-align: middle;
@@ -57,6 +64,15 @@
   .pages{
     float:right;
     vertical-align: middle;
+    input{
+      vertical-align: middle;
+      position:relative;
+      top:3px;
+    }
+  }
+  .btn-group{
+    display:inline-block;
+    vertical-align: middle;  
   }
   }
 

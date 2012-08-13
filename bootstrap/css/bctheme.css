@@ -220,7 +220,7 @@ select.input-xlarge,textarea.input-xlarge,input[type="text"].input-xlarge,input[
 select.input-xxlarge,textarea.input-xxlarge,input[type="text"].input-xxlarge,input[type="password"].input-xxlarge,input[type="datetime"].input-xxlarge,input[type="datetime-local"].input-xxlarge,input[type="date"].input-xxlarge,input[type="month"].input-xxlarge,input[type="time"].input-xxlarge,input[type="week"].input-xxlarge,input[type="number"].input-xxlarge,input[type="email"].input-xxlarge,input[type="url"].input-xxlarge,input[type="search"].input-xxlarge,input[type="tel"].input-xxlarge,input[type="color"].input-xxlarge,.uneditable-input.input-xxlarge{width:530px;}
 label{font-weight:600;}
 input[type="range"]{width:220px;}
-input.inline{padding:0!important;}input.inline:focus{outline:none;}
+input.inline{padding:0!important;position:absolute;width:100px;}input.inline:focus{outline:none;}
 table{max-width:100%;background-color:transparent;border-collapse:collapse;border-spacing:0;}
 .table{width:100%;margin-bottom:18px;}.table th,.table td{padding:8px;line-height:18px;text-align:left;vertical-align:top;border-top:1px solid #dddddd;}
 .table th{font-weight:bold;}
@@ -268,7 +268,8 @@ table .span24{float:none;width:1884px;margin-left:0;}
 .table tbody tr:hover td,.table tbody tr:hover th{background-color:#e0f0fa;}
 .table tfoot .chzn-container{vertical-align:middle;}
 .table tfoot .list_items{margin-left:10px;display:inline-block;position:relative;top:2px;}
-.table tfoot .pages{float:right;vertical-align:middle;}
+.table tfoot .pages{float:right;vertical-align:middle;}.table tfoot .pages input{vertical-align:middle;position:relative;top:3px;}
+.table tfoot .btn-group{display:inline-block;vertical-align:middle;}
 h1,h2,h3,h4,h5,h6{font-weight:600;}
 [class^="icon-"],[class*=" icon-"]{display:inline-block;width:14px;height:14px;*margin-right:.3em;line-height:14px;vertical-align:text-top;background-image:url("../img/glyphicons-halflings.png");background-position:14px 14px;background-repeat:no-repeat;}[class^="icon-"]:last-child,[class*=" icon-"]:last-child{*margin-left:0;}
 .icon-white{background-image:url("../img/glyphicons-halflings-white.png");}

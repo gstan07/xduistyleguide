@@ -689,9 +689,9 @@
 	<h1>Tables</h1>
 
 		<h3>Basic Listing</h3>
-		Most of the time you will list items using a striped table:
+		<span class="getcode" data-getcode="gc_tables1"></span> Most of the time you will list items using a striped table:
 		<span id="gc_tables1">
-		<table class = "table table-striped">
+		<table class = "table table-striped" data-component="grid">
 			<thead>
 				<tr>
 					<th>Column 1</th>
@@ -730,12 +730,16 @@
 			</tfoot>
 		</table>
 		</span>
-		<span class="getcode" data-getcode="gc_tables1"></span>
+		
 
-		<table class = "table table-striped">
+		<span data-getcode="gc_grid_2" class="getcode"></span> <strong>Grid component with inline editable fields</strong>
+		<p>This supercomponent uses a table, dropdown buttons and dropdown components to display tabular data.<br/>
+		</p>
+		<span id="gc_grid_2">
+		<table class = "table table-striped" data-component="grid">
 			<thead>
 				<tr>
-					<th><input type="checkbox"/></th>
+					<th width="20"><input type="checkbox" data-component-grid-element = "checkall"/></th>
 					<th>Column 1</th>
 					<th>Column 2</th>
 					<th>Column 3</th>
@@ -743,25 +747,25 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td><input type="checkbox"/></td>
+					<td><input type="checkbox" data-component-grid-element = "rowcheck"/></td>
+					<td><span data-component-grid-element="inline-editable">Value</span></td>
+					<td>Value</td>
+					<td>Value</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" data-component-grid-element = "rowcheck"/></td>
+					<td><span data-component-grid-element="inline-editable">Value</span></td>
+					<td>Value</td>
+					<td>Value</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" data-component-grid-element = "rowcheck"/></td>
 					<td>Value</td>
 					<td>Value</td>
 					<td>Value</td>
 				</tr>
 				<tr>
-					<td><input type="checkbox"/></td>
-					<td>Value</td>
-					<td>Value</td>
-					<td>Value</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox"/></td>
-					<td>Value</td>
-					<td>Value</td>
-					<td>Value</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox"/></td>
+					<td><input type="checkbox" data-component-grid-element = "rowcheck"/></td>
 					<td>Value</td>
 					<td>Value</td>
 					<td>Value</td>
@@ -770,19 +774,37 @@
 			<tfoot>
 				<tr>
 					<td colspan = "4">
-						<select id = "bulkactions1" data-component="dropdown" data-component-dropdown-search = "disabled" data-component-dropdown-width = "120">
-							<option value = "1">Action 1</option>
-							<option value = "2">Action 2</option>
-							<option value = "3">Action 3</option>
-						</select>
-						<select id = "bulkactions2" data-component="dropdown" data-component-dropdown-search = "disabled" data-component-dropdown-width = "120">
-							<option value = "1">Export</option>
-							<option value = "2">Action 2 lorem ipsum dolor sit amet</option>
-							<option value = "3">Action 3</option>
-						</select>
+						<div class="btn-group">
+					     <button class="btn">Action</button>
+					    <button class="btn dropdown-toggle" data-toggle="dropdown">
+					        <b class="caret"></b>
+					     </button>
+					     <ul class="dropdown-menu">
+					       <li><a href="#">Action</a></li>
+					    <li><a href="#">Another action</a></li>
+					    <li><a href="#">Something else here</a></li>
+					    <li class="divider"></li>
+					    <li><a href="#">Separated link</a></li>
+					   </ul>
+					  </div>
+
+
+					  <div class="btn-group">
+					     <button class="btn">Action</button>
+					    <button class="btn dropdown-toggle" data-toggle="dropdown">
+					        <b class="caret"></b>
+					     </button>
+					     <ul class="dropdown-menu">
+					       <li><a href="#">Action</a></li>
+					    <li><a href="#">Another action</a></li>
+					    <li><a href="#">Something else here</a></li>
+					    <li class="divider"></li>
+					    <li><a href="#">Separated link</a></li>
+					   </ul>
+					  </div>
 						 
 						<span class="list_items">345 items &nbsp; &dash;</span>
-						 <select id = "itemsperpage" data-component="dropdown" data-component-dropdown-search = "disabled" data-component-dropdown-mode = "quiet">
+						 <select id = "itemsperpage2" data-component="dropdown" data-component-dropdown-search = "disabled" data-component-dropdown-mode = "quiet">
 							<option value = "1">20 per page</option>
 							<option value = "2">50 per page</option>
 							<option value = "3">100 per page</option>
@@ -799,6 +821,7 @@
 				</tr>
 			</tfoot>
 		</table>
+		</span>
 
 
 

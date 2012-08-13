@@ -454,16 +454,34 @@ components = ({
 			});
 
 		},
-		inlineEditable: function(el){
-			$(el).click(function(e){
-				input = $('<input class="inline" value="'+$(el).text()+'"/>');
-				el_length = $(el).text().length;
-				$(el).html(input);
+
+		grid:function(el){
+			//adding check all functionality
+			$("[data-component-grid-element ='checkall']",el).click(function(e){
+				if($(this).is(":checked")){
+					$("[data-component-grid-element ='rowcheck']",el).attr('checked', true);
+				}
+				else{
+					$("[data-component-grid-element ='rowcheck']",el).attr('checked', false);
+				}
+			});
+
+			//adding inline editable functionality
+			$("[data-component-grid-element ='inline-editable']",el).attr("title","Click to edit inline");
+			$("[data-component-grid-element ='inline-editable']",el).click(function(e){
+
+				input = $('<input class="inline" value="'+$(this).text()+'"/>');
+				el_length = $(this).text().length;
+				$(this).html(input);
 
 				//$(el).find("input").width(el_length*9);
-				$(el).find("input").focus();
-				$(el).find("input").blur(function(e){
+				$(this).find("input").focus();
+				$(this).find("input").blur(function(e){
 					$(this).replaceWith($(this).val());
+				});
+				$(this).find("input").bind("focus click",function(e){
+					e.stopPropagation();
+					e.preventDefault();
 				});
 				e.stopPropagation();
 				e.preventDefault();
