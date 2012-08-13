@@ -151,7 +151,7 @@
 				  <li class="divider-vertical"></li>
 				  <li><a href="#" data-sectionswitch = "forms">Form Elements</a></li>
 				  <li class="divider-vertical"></li>
-				  <li><a href="#" data-sectionswitch = "tables">Tables</a></li>
+				  <li><a href="#" data-sectionswitch = "tables">Lists</a></li>
 				  <li class="divider-vertical"></li>
 				  <li><a href="#" data-sectionswitch = "grid">Using the grid</a></li>
 				  <li class="divider-vertical"></li>
@@ -159,8 +159,9 @@
 		  
 				 
 				  <li class = "dropdown">
-				  	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Misc Components<b class="caret"></b></a>
+				  	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Components<b class="caret"></b></a>
 				    <ul class="dropdown-menu">
+				    	<li><a href = "#" data-sectionswitch = "dropdown">Dropdown</a></li>
 				      <li><a href = "#" data-sectionswitch = "tooltips">Tooltips and pop-overs</a></li>
 				       <li><a href = "#" data-sectionswitch = "accordion">Accordion</a></li>
 				       <li><a href = "#" data-sectionswitch = "filters">Filters</a></li>
@@ -296,8 +297,26 @@
 		</span>
 		<span class="getcode" data-getcode="gc_btn_group_3"></span>
 	</div>
-	
+	<div class = "well">
+		<h3>Buttons with separated dropdown</h3>
+		<span id="gc_btn_group_x">
+		<div class="btn-group">
+	  		<button class="btn">Action</button>
+	 		<button class="btn dropdown-toggle" data-toggle="dropdown">
+	     		<b class="caret"></b>
+	  		</button>
+		  	<ul class="dropdown-menu">
+			    <li><a href="#">Action</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else here</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Separated link</a></li>
+			</ul>
+		</div>
+		</span>
+		<span class="getcode" data-getcode="gc_btn_group_x"></span>
 
+	</div>
 	<div class = "well">
 
 		<h3>Button Toggles</h3>
@@ -1691,6 +1710,60 @@ We use this type of tabs wherever there's a pod that needs this type of navigati
 	<input data-component-autocomplete_url = "lib/tags/autocomplete.mock.txt" id = "tagsinput2" type="text" data-component = "tagsinput"/>
 </span>
 	
+</div>
+<div style = "display:none;padding:5px;" id = "dropdown" data-section="true">
+	<h1 style = "margin-top:50px;">Dropdown</h1>
+	<p>The dropdown component uses <a href="http://harvesthq.github.com/chosen/" target="blank">jQuery Chosen component</a> to enhance a normal select element, adding search capabilities, a nicer multi select pathern and a cool look</p>
+	<div class = "well">
+		<span class="getcode" data-getcode="gc_dropdown1"></span><label for="sel1">Single select, with search</label> 
+		<span id="gc_dropdown1">
+		<select data-component="dropdown" id="sel1">
+			<option value="1">Option 1</option>
+			<option value="2">Option 2</option>
+			<option value="3">Option 3</option>
+		</select>
+		</span>
+	</div>
+	<div class = "well">
+		<span class="getcode" data-getcode="gc_dropdown2"></span><label for="sel2">Multiple select, with search</label> 
+		<span id="gc_dropdown2">
+		<select data-component="dropdown" id="sel2" multiple>
+			<option value="1">Option 1</option>
+			<option value="2">Option 2</option>
+			<option value="3">Option 3</option>
+		</select>
+		</span>
+	</div>
+	<div class = "well">
+		<span class="getcode" data-getcode="gc_dropdown3"></span><label for="sel3">Single select, no search</label> 
+		<span id="gc_dropdown3">
+		<select data-component="dropdown" data-component-dropdown-search="disabled" id="sel3">
+			<option value="1">Option 1</option>
+			<option value="2">Option 2</option>
+			<option value="3">Option 3</option>
+		</select>
+		</span>
+	</div>
+	<div class = "well">
+		<span class="getcode" data-getcode="gc_dropdown4"></span><label for="sel4">Single select, custom width</label> 
+		<span id="gc_dropdown4">
+		<select data-component="dropdown" id="sel4" data-component-dropdown-width="100">
+			<option value="1">Option 1</option>
+			<option value="2">Option 2</option>
+			<option value="3">Option 3</option>
+		</select>
+		</span>
+	</div>
+	<div class = "well">
+		<span class="getcode" data-getcode="gc_dropdown5"></span><label for="sel5">Single select, quiet</label> 
+		<span id="gc_dropdown5">
+		<select data-component="dropdown" id="sel5" data-component-dropdown-mode = "quiet">
+			<option value="1">Option 1</option>
+			<option value="2">Option 2</option>
+			<option value="3">Option 3</option>
+		</select>
+		</span>
+	</div>
 </div>
 </body>
 </html>

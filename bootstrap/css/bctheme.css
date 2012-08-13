@@ -220,6 +220,7 @@ select.input-xlarge,textarea.input-xlarge,input[type="text"].input-xlarge,input[
 select.input-xxlarge,textarea.input-xxlarge,input[type="text"].input-xxlarge,input[type="password"].input-xxlarge,input[type="datetime"].input-xxlarge,input[type="datetime-local"].input-xxlarge,input[type="date"].input-xxlarge,input[type="month"].input-xxlarge,input[type="time"].input-xxlarge,input[type="week"].input-xxlarge,input[type="number"].input-xxlarge,input[type="email"].input-xxlarge,input[type="url"].input-xxlarge,input[type="search"].input-xxlarge,input[type="tel"].input-xxlarge,input[type="color"].input-xxlarge,.uneditable-input.input-xxlarge{width:530px;}
 label{font-weight:600;}
 input[type="range"]{width:220px;}
+input.inline{padding:0!important;}input.inline:focus{outline:none;}
 table{max-width:100%;background-color:transparent;border-collapse:collapse;border-spacing:0;}
 .table{width:100%;margin-bottom:18px;}.table th,.table td{padding:8px;line-height:18px;text-align:left;vertical-align:top;border-top:1px solid #dddddd;}
 .table th{font-weight:bold;}
@@ -521,6 +522,7 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{*padding-top:1px;*padding-
 .btn-group>.btn.large:first-child{-webkit-border-top-left-radius:2px;-moz-border-radius-topleft:2px;border-top-left-radius:2px;-webkit-border-top-right-radius:0;-moz-border-radius-topright:0;border-top-right-radius:0;-webkit-border-bottom-right-radius:0;-moz-border-radius-bottomright:0;border-bottom-right-radius:0;-webkit-border-bottom-left-radius:2px;-moz-border-radius-bottomleft:2px;border-bottom-left-radius:2px;}
 .btn-group>.btn.large:last-child,.btn-group>.large.dropdown-toggle{-webkit-border-top-left-radius:0;-moz-border-radius-topleft:0;border-top-left-radius:0;-webkit-border-top-right-radius:2px;-moz-border-radius-topright:2px;border-top-right-radius:2px;-webkit-border-bottom-right-radius:2px;-moz-border-radius-bottomright:2px;border-bottom-right-radius:2px;-webkit-border-bottom-left-radius:0;-moz-border-radius-bottomleft:0;border-bottom-left-radius:0;}
 .btn-group.switch .btn{padding:2px 4px;}.btn-group.switch .btn.active{background-color:#666;color:#fff;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);border-color:#333;}
+.btn .caret{padding-bottom:7px;}
 .nav{margin-left:0;margin-bottom:18px;list-style:none;}
 .nav>li>a{display:block;}
 .nav>li>a:hover{text-decoration:none;background-color:#eeeeee;}

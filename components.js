@@ -453,6 +453,21 @@ components = ({
 				$(".tagsinput").removeClass("active");
 			});
 
+		},
+		inlineEditable: function(el){
+			$(el).click(function(e){
+				input = $('<input class="inline" value="'+$(el).text()+'"/>');
+				el_length = $(el).text().length;
+				$(el).html(input);
+
+				//$(el).find("input").width(el_length*9);
+				$(el).find("input").focus();
+				$(el).find("input").blur(function(e){
+					$(this).replaceWith($(this).val());
+				});
+				e.stopPropagation();
+				e.preventDefault();
+			});
 		}
 
 	});
