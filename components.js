@@ -470,16 +470,34 @@ components = ({
 			$("[data-component-grid-element ='inline-editable']",el).attr("title","Click to edit inline");
 			$("[data-component-grid-element ='inline-editable']",el).click(function(e){
 
+				
 				input = $('<input class="inline" value="'+$(this).text()+'"/>');
 				el_length = $(this).text().length;
+				$(this).closest("td").attr("data-initial-text",$(this).html());
 				$(this).html(input);
 
 				//$(el).find("input").width(el_length*9);
+
 				$(this).find("input").focus();
+
 				$(this).find("input").blur(function(e){
 					$(this).replaceWith($(this).val());
 				});
+
+				$(this).find("input").bind("keyup",function(e){
+					if(e.keyCode == 13){
+						//enter was pressed
+						$(this).blur();
+					}
+					if(e.keyCode == 27){
+						//escape was pressed. HALT!
+						$(this).replaceWith($(this).closest("td").attr("data-initial-text"));
+
+					}
+				});
+
 				$(this).find("input").bind("focus click",function(e){
+					$(this).closest("td").attr("data-initial-text",$(this).val());
 					e.stopPropagation();
 					e.preventDefault();
 				});
