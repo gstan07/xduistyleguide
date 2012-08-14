@@ -50,6 +50,46 @@
     background-color:@tableBackgroundHover!important;
     color:@black;
   }
+  td.actions{
+    width:150px;
+    a{
+    display:inline-block;
+    margin-right:10px;
+      &:last-child{
+        margin-right:0;
+      }
+    }
+  }
+  tr.ui-sortable-helper{
+    border:1px dashed @grayDark;
+  }
+  tr.ui-state-highlight{
+    border:none!important;
+   background-color: @white!important;
+  background-image: 
+  -webkit-gradient(linear, 100% 0%, 0% 100%, 
+  from(transparent), 
+  color-stop(0.25, transparent),  
+  color-stop(0.25, @grayLighter), 
+  color-stop(0.50, @grayLighter), 
+  color-stop(0.50, transparent), 
+  color-stop(0.75, transparent),
+  color-stop(0.75, @grayLighter),  
+  to(@grayLighter))!important;
+  ffbackground-color: blue!important;
+-webkit-background-size: 20px 20px!important;
+
+    td{
+      
+
+      background-color:transparent!important;
+    }
+
+  }
+  td .icon-pencil{
+    float:right;
+    .opacity(50);
+  }
   tfoot{
     .chzn-container{
       vertical-align: middle;

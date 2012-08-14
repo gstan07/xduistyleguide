@@ -267,6 +267,10 @@ table .span24{float:none;width:1884px;margin-left:0;}
 .table{-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;border:1px solid #dddddd;}.table td,.table th{line-height:14px;padding:7px;background-color:#DBDBDB;border:none;}
 .table tbody tr:hover td,.table tbody tr:hover th{background-color:#e0f0fa;}
 .table tr.selected td{background-color:#e0f0fa !important;color:#000000;}
+.table td.actions{width:150px;}.table td.actions a{display:inline-block;margin-right:10px;}.table td.actions a:last-child{margin-right:0;}
+.table tr.ui-sortable-helper{border:1px dashed #333333;}
+.table tr.ui-state-highlight{border:none!important;background-color:#ffffff !important;background-image:-webkit-gradient(linear, 100% 0%, 0% 100%, from(transparent), color-stop(0.25, transparent), color-stop(0.25, #eeeeee), color-stop(0.5, #eeeeee), color-stop(0.5, transparent), color-stop(0.75, transparent), color-stop(0.75, #eeeeee), to(#eeeeee)) !important;ffbackground-color:blue!important;-webkit-background-size:20px 20px!important;}.table tr.ui-state-highlight td{background-color:transparent!important;}
+.table td .icon-pencil{float:right;opacity:0.5;filter:alpha(opacity=50);}
 .table tfoot .chzn-container{vertical-align:middle;}
 .table tfoot .list_items{margin-left:10px;display:inline-block;position:relative;top:2px;}
 .table tfoot .pages{float:right;vertical-align:middle;}.table tfoot .pages input{vertical-align:middle;position:relative;top:3px;}

@@ -482,6 +482,18 @@ components = ({
 
 			//adding inline editable functionality
 			$("[data-component-grid-element ='inline-editable']",el).attr("title","Click to edit inline");
+			//adding pencil icon
+			$("[data-component-grid-element ='inline-editable']",el).closest("td").hover(function(){
+				if($(this).find("input").length == 0){
+					$("<i class='icon icon-pencil'></i>").insertAfter($(this).find("[data-component-grid-element ='inline-editable']"));
+				}
+			},
+			function(){
+				$(this).find(".icon-pencil").remove();
+			});
+			$("[data-component-grid-element ='inline-editable']",el).closest("td").click(function(e){
+				$(this).find("[data-component-grid-element ='inline-editable']").trigger("click");
+			});
 			$("[data-component-grid-element ='inline-editable']",el).click(function(e){
 
 				
@@ -493,6 +505,7 @@ components = ({
 				//$(el).find("input").width(el_length*9);
 
 				$(this).find("input").focus();
+				$(this).siblings(".icon-pencil").remove();
 
 				$(this).find("input").blur(function(e){
 					$(this).replaceWith($(this).val());
@@ -539,7 +552,7 @@ components = ({
 				move_icon = $("<i class='icon icon-th' title = 'drag to sort'></icon>");
 				move_icon.css({
 					'visibility':'hidden',
-					'cursor':'pointer',
+					'cursor':'move',
 					'opacity':.5,
 					'width':5,
 					'margin-right':3
@@ -553,7 +566,7 @@ components = ({
 				//prepending move icon
 				$("tr td:first-child,tr th:first-child",el).prepend(move_icon);
 				//setting the td width back to the original
-				$("tr td:first-child,tr th:first-child",el).width(init_width);
+				$("tr td:first-child,tr th:first-child",el).width(init_width+10);
 				
 
 				$("tbody tr",el).hover(function(){
@@ -572,9 +585,18 @@ components = ({
 				    });
 				    return ui;
 				};
+				var forceHelper = function(e,ui) {
+					$(".ui-state-highlight").html("<td colspan='4'>&nbsp;</td>");
+				};
 				$("tbody",el).sortable({
 					 helper: fixHelper,
-					 handle: ".icon-th"
+					 handle: ".icon-th",
+					 axis: "y",
+					 cursor: 'move',
+					 placeholder: 'ui-state-highlight',
+					 change: function(e, ui) {
+         				forceHelper(e,ui);
+      				}
 				});
 			}
 			
