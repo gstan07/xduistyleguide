@@ -459,10 +459,23 @@ components = ({
 			//adding check all functionality
 			$("[data-component-grid-element ='checkall']",el).click(function(e){
 				if($(this).is(":checked")){
-					$("[data-component-grid-element ='rowcheck']",el).attr('checked', true);
+					$("[data-component-grid-element ='rowcheck']",el).each(function(){
+						if($(this).is(":checked") == false){
+							//we trigger change because a checkbox don;t fire change when changed programaticaly
+							//and we need this event later
+							$(this).trigger("change");
+						}
+						$(this).attr('checked', true);
+					});
 				}
 				else{
-					$("[data-component-grid-element ='rowcheck']",el).attr('checked', false);
+
+					$("[data-component-grid-element ='rowcheck']",el).each(function(){
+						if($(this).is(":checked") == true){
+							$(this).trigger("change");
+						}
+						$(this).attr('checked', false);
+					});
 				}
 				checkBulkActions();
 			});
@@ -506,6 +519,7 @@ components = ({
 				e.preventDefault();
 			});
 			$("[data-component-grid-element = 'rowcheck']",el).change(function(){
+				$(this).closest("tr").toggleClass("selected");
 				checkBulkActions();
 			});
 			
@@ -517,6 +531,51 @@ components = ({
 				else{
 					$("[data-component-grid-element = 'bulk-actions-group'] .btn.btn-primary",el).removeClass("btn-[rimary").addClass("disabled");
 				}	
+			}
+
+			//handling sortable rows
+			if($(el).data("component-grid-sortable") == true){
+				//adding the handle icon and show it on tr hover
+				move_icon = $("<i class='icon icon-th' title = 'drag to sort'></icon>");
+				move_icon.css({
+					'visibility':'hidden',
+					'cursor':'pointer',
+					'opacity':.5,
+					'width':5,
+					'margin-right':3
+
+				});
+				
+				//for some reason, prepending an element to the first td will make the
+				//td very large, so do this little hack
+				//getting initial width
+				init_width = $("tr td:first-child,tr th:first-child",el).width();
+				//prepending move icon
+				$("tr td:first-child,tr th:first-child",el).prepend(move_icon);
+				//setting the td width back to the original
+				$("tr td:first-child,tr th:first-child",el).width(init_width);
+				
+
+				$("tbody tr",el).hover(function(){
+					$(this).find(".icon-th").css({
+						'visibility':'visible'
+					});
+				},function(){
+					$(this).find(".icon-th").css({
+						'visibility':'hidden'
+					});
+				});
+
+				var fixHelper = function(e, ui) {
+				    ui.children().each(function() {
+				        $(this).width($(this).width());
+				    });
+				    return ui;
+				};
+				$("tbody",el).sortable({
+					 helper: fixHelper,
+					 handle: ".icon-th"
+				});
 			}
 			
 		}

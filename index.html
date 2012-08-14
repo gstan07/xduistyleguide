@@ -691,7 +691,7 @@
 		<h3>Basic Listing</h3>
 		<span class="getcode" data-getcode="gc_tables1"></span> Most of the time you will list items using a striped table:
 		<span id="gc_tables1">
-		<table class = "table table-striped" data-component="grid">
+		<table class = "table table-striped" data-component="grid" >
 			<thead>
 				<tr>
 					<th>Column 1</th>
@@ -732,11 +732,11 @@
 		</span>
 		
 
-		<span data-getcode="gc_grid_2" class="getcode"></span> <strong>Grid component with inline editable fields</strong>
+		<span data-getcode="gc_grid_2" class="getcode"></span> <strong>Grid component with inline editable fields and sortable</strong>
 		<p>This supercomponent uses a table, dropdown buttons and dropdown components to display tabular data.<br/>
 		</p>
 		<span id="gc_grid_2">
-		<table class = "table table-striped" data-component="grid">
+		<table class = "table table-striped" data-component="grid" data-component-grid-sortable = "true">
 			<thead>
 				<tr>
 					<th width="20"><input type="checkbox" data-component-grid-element = "checkall"/></th>
@@ -747,28 +747,28 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td><input type="checkbox" data-component-grid-element = "rowcheck"/></td>
-					<td><span data-component-grid-element="inline-editable">Value</span></td>
-					<td>Value</td>
-					<td>Value</td>
+					<td width="20"><input type="checkbox" data-component-grid-element = "rowcheck"/></td>
+					<td><span data-component-grid-element="inline-editable">Value 1</span></td>
+					<td>Value 2</td>
+					<td>Value 3</td>
 				</tr>
 				<tr>
 					<td><input type="checkbox" data-component-grid-element = "rowcheck"/></td>
-					<td><span data-component-grid-element="inline-editable">Value</span></td>
-					<td>Value</td>
-					<td>Value</td>
+					<td><span data-component-grid-element="inline-editable">Value 4</span></td>
+					<td>Value 5</td>
+					<td>Value 6</td>
 				</tr>
 				<tr>
 					<td><input type="checkbox" data-component-grid-element = "rowcheck"/></td>
-					<td>Value</td>
-					<td>Value</td>
-					<td>Value</td>
+					<td>Value 7</td>
+					<td>Value 8</td>
+					<td>Value 9</td>
 				</tr>
 				<tr>
 					<td><input type="checkbox" data-component-grid-element = "rowcheck"/></td>
-					<td>Value</td>
-					<td>Value</td>
-					<td>Value</td>
+					<td>Value 10</td>
+					<td>Value 11</td>
+					<td>Value 12</td>
 				</tr>
 			</tbody>
 			<tfoot>
