@@ -622,6 +622,23 @@ components = ({
 			});
 			
 			
+		},
+		tooltip: function(el){
+			options = {
+				animation: !!$(el).attr("component-tooltip-animation") || false,
+				placement: $(el).data("component-tooltip-placement") || 'top',
+				selector: $(el).data("component-tooltip-selector") || false,
+				title: $(el).data("component-tooltip-title") || "",
+				trigger: $(el).data("component-tooltip-trigger") || 'hover',
+				delay: $(el).data("component-tooltip-delay") || 0,
+			}
+			$(el).tooltip(options);
+		},
+		toggler: function(el){
+			$(el).click(function(e){
+				$($(el).attr("href")).toggleClass("hide");
+				e.preventDefault();
+			});
 		}
 
 	});

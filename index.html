@@ -947,6 +947,18 @@
 <div style = "display:none;padding:5px;" id = "tooltips" data-section="true">
 	<h1 style = "margin-top:50px;">Tooltips and pop-overs</h1>
 	<br/><br/>
+	<strong>Tooltips:</strong> <a href="#tooltipattributes" data-component="toggler">Show/hide tooltip custom attributes you can use</a>
+	<pre id="tooltipattributes" class="hide">
+data-component-tooltip-animation, default:false, apply a css fade transition to the tooltip
+data-component-tooltip-placement, default:'top', how to position the tooltip - top | bottom | left | right
+data-component-tooltip-selector, default:false, If a selector is provided, tooltip objects will be delegated to the specified targets.
+data-component-tooltip-title, default: "", default title value if `title` tag isn't present
+data-component-tooltip-trigger, default:'hover', how tooltip is triggered - hover | focus | manual
+data-component-tooltip-delay, default:0, delay showing and hiding the tooltip (ms) - does not apply to manual trigger type If a number is supplied, delay is applied to both hide/show Object structure is: delay: { show: 500, hide: 100 }		
+	</pre>
+	<br/><br/>
+	Lorem ipsum dolor <span class="getcode" data-getcode = "gc_tooltip1"></span><span id="gc_tooltip1"> <a href="#" rel="tooltip" title="here i am, rock you like a hurricane" data-component="tooltip">default options</a></span> sit amet, consectetur adipiscing elit. Sed dapibus <span class="getcode" data-getcode = "gc_tooltip2"></span><span id="gc_tooltip1"> <span id="gc_tooltip2"><a href="#" rel="tooltip" title="all right :)" data-component="tooltip" data-component-tooltip-placement = "right">right placed</a></span> interdum faucibus. Nam sapien sapien, vestibulum vitae dapibus at, tincidunt a nisi. Fusce ligula libero, molestie at rutrum aliquam, luctus et lectus. Nullam ut tempus turpis. Sed et <span class="getcode" data-getcode = "gc_tooltip3"></span><span id="gc_tooltip1"> <span id="gc_tooltip3"><a href="#" data-component = "tooltip" component-tooltip-animation = "true" data-component-tooltip-title = "Now you see me, now you don't">Fade in tooltip</a></span> nulla non nunc mattis elementum ac sit amet mauris. Praesent non eros eget odio lacinia rutrum. Duis est diam, tempor vitae aliquam imperdiet, iaculis sed risus. <span class="getcode" data-getcode = "gc_tooltip4"></span><span id="gc_tooltip1"> <span id="gc_tooltip4"><a href="#" rel="tooltip" title="to the left, to the left" data-component="tooltip" data-component-tooltip-placement = "left">left placed</a></span> Integer facilisis imperdiet mi, sit amet pulvinar odio placerat a. In eget libero at lectus bibendum consequat. Praesent nec libero eget augue cursus tincidunt. <br/><span class="getcode" data-getcode = "gc_tooltip5"></span><span id="gc_tooltip1"> <span id="gc_tooltip5"><a href="#" data-component = "tooltip" data-component-tooltip-title = "low low low" data-component-tooltip-placement = "bottom">Bottom placed tooltip here</a></span>
+	<br/><br/>
 	<strong>Popovers</strong>
 
 	<table class="table table-striped" style="width:70%;margin-top:50px;">

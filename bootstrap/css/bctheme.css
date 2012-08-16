@@ -723,6 +723,10 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{*padding-top:1px;*padding-
 .popover-inner{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background:#000000;background:#ffffff;border:1px solid ;border:1px solid #DFDFDF;-webkit-box-shadow:1px 0 10px #cccccc;-moz-box-shadow:1px 0 10px #cccccc;box-shadow:1px 0 10px #cccccc;}
 .popover-title{padding:5px 15px;background:#ffffff;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;border-bottom:none;}.popover-title:empty{display:none;}
 .popover-content{-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px;background-color:#ffffff;}
+.tooltip.top .tooltip-arrow{bottom:0;left:50%;margin-left:-5px;border-left:1px solid #000000;border-bottom:1px solid #000000;border-top:none;border-right:none;width:5px;height:5px;background-color:#000000;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg);bottom:2px;}
+.tooltip.left .tooltip-arrow{top:50%;right:0;margin-top:-5px;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:5px solid #000000;}
+.tooltip.bottom .tooltip-arrow{top:0;left:50%;margin-left:-5px;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:5px solid #000000;top:0;left:50%;margin-left:-5px;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:5px solid #000000;}
+.tooltip.right .tooltip-arrow{top:50%;left:0px;margin-top:-5px;border-left:1px solid #000000;border-bottom:1px solid #000000;border-top:none;border-right:none;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);background-color:#000000;width:5px;height:5px;left:2px;}
 .thumbnails{margin-left:-20px;list-style:none;*zoom:1;}.thumbnails:before,.thumbnails:after{display:table;content:"";}
 .thumbnails:after{clear:both;}
 .row-fluid .thumbnails{margin-left:0;}
