@@ -2,10 +2,13 @@
 <html>
 <head>
 <title>Business Catalyst UI Style Guide</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!--<bootstrap compiled CSS>-->
 <link rel="stylesheet" href="bootstrap/css/bctheme.css"/>
 <link rel="stylesheet" href="bootstrap/css/responsive.css"/>
 <!--</bootstrap compiled CSS>-->
+
+
 
 <!--<jQuery library>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -52,6 +55,10 @@
 	<!--<tags input component>-->
 	<script type="text/javascript" src="lib/tags/jquery.tagsinput.js"></script>
 	<!--</tags input component>-->
+	<!--<spinner component>-->
+	<script type="text/javascript" src="lib/spin.js/spin.min.js"></script>
+	<script type="text/javascript" src="lib/spin.js/spin.jquery.js"></script>
+	<!--</spinner component>-->
 <!--</compoents JS>-->
 
 
@@ -169,6 +176,7 @@
 				       <li><a href = "#" data-sectionswitch = "daterange">DateRange Picker</a></li>
 				       <li><a href = "#" data-sectionswitch = "progress">Progress bars</a></li>
 				       <li><a href = "#" data-sectionswitch = "tags">Tags Input</a></li>
+				       <li><a href = "#" data-sectionswitch = "spinner">Spinner</a></li>
 				    </ul>
 				  </li>
 				  <li class="divider-vertical"></li>
@@ -341,6 +349,15 @@
 			</div>
 		</span> <span class="getcode" data-getcode="gc_btn_toggle_3"></span>
 
+
+		<br/>Switch:<br/>
+		<span id="gc_btn_toggle_4">
+		<div class="btn-group switch" data-toggle="buttons-radio">
+			  <button class="btn active">On</button>
+			  <button class="btn">Off</button>
+		</div>
+		</span>
+		<span class="getcode" data-getcode="gc_btn_toggle_4"></span>
 	</div>
 </div>
 <div style = "padding:5px;display:none" id = "pods" data-section="true">
@@ -1889,6 +1906,37 @@ We use this type of tabs wherever there's a pod that needs this type of navigati
 		</select>
 		</span>
 	</div>
+</div>
+<div style = "display:none;padding:5px;" id = "spinner" data-section="true">
+	<h1 style = "margin-top:50px;">Spinner</h1>
+	<p>We use <a href="#">spin.js</a> to display an image free loading spinner. Click here for the <a href="#" id="togglespinnercustomisations">customisation attributes list</a>
+		<pre class="hide" id="spinner-custom-attributes">
+data-component-spinner-lines, default: 13, // The number of lines to draw
+data-component-spinner-length, default: 5, // The length of each line
+data-component-spinner-width, default: 2, // The line thickness
+data-component-spinner-radius, default: 7, // The radius of the inner circle
+data-component-spinner-corners, default: 1, // Corner roundness (0..1)
+data-component-spinner-rotate, default: 0, // The rotation offset
+data-component-spinner-color, default: '#000', // #rgb or #rrggbb
+data-component-spinner-speed, default: 1, // Rounds per second
+data-component-spinner-trail, default: 60, // Afterglow percentage
+data-component-spinner-shadow, default: false, // Whether to render a shadow
+data-component-spinner-hwaccell, default: false, // Whether to use hardware acceleration
+data-component-spinner-classname, default: 'spinner', // The CSS class to assign to the spinner
+data-component-spinner-zIndex, default: 2e9, // The z-index (defaults to 2000000000)
+data-component-spinner-top, default: 10, // Top position relative to parent in px
+data-component-spinner-left, default: 10 // Left position relative to parent in px
+		</pre>
+	</p>
+	<strong>Default options</strong> <span class="getcode" data-getcode="gc_spinner1"></span>
+	<span id="gc_spinner1">
+		<span data-component="spinner"></span>
+	</span>
+	<br/><br/><br/>
+	<strong>How about a large one?</strong> <span class="getcode" data-getcode="gc_spinner2"></span>
+	<span id="gc_spinner2">
+		<span data-component="spinner" data-component-spinner-radius = "20"></span>
+	</span>
 </div>
 </body>
 </html>

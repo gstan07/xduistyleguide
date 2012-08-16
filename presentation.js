@@ -37,6 +37,11 @@ $(document).ready(function(){
 			//$(".prettyprint").select();
 			SelectText("prettyprint");
 		});
+		$("#togglespinnercustomisations").click(function(e){
+			console.log("aici");
+			$("#spinner-custom-attributes").toggleClass("hide");
+			e.preventDefault();
+		});
 });
 
 	function htmlEncode(value){

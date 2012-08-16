@@ -600,6 +600,28 @@ components = ({
 				});
 			}
 			
+		},
+		spinner: function(el){
+
+			$(el).spin({
+			  lines: $(el).data("component-spinner-lines") || 13, // The number of lines to draw
+			  length: $(el).data("component-spinner-length") || 5, // The length of each line
+			  width: $(el).data("component-spinner-width") || 2, // The line thickness
+			  radius: $(el).data("component-spinner-radius") || 7, // The radius of the inner circle
+			  corners: $(el).data("component-spinner-corners") || 1, // Corner roundness (0..1)
+			  rotate: $(el).data("component-spinner-rotate") || 0, // The rotation offset
+			  color: $(el).data("component-spinner-color") || '#000', // #rgb or #rrggbb
+			  speed:  $(el).data("component-spinner-speed") || 1, // Rounds per second
+			  trail: $(el).data("component-spinner-trail") || 60, // Afterglow percentage
+			  shadow: $(el).data("component-spinner-shadow") || false, // Whether to render a shadow
+			  hwaccel: $(el).data("component-spinner-hwaccell") || false, // Whether to use hardware acceleration
+			  className: $(el).data("component-spinner-classname") || 'spinner', // The CSS class to assign to the spinner
+			  zIndex: $(el).data("component-spinner-zIndex") || 2e9, // The z-index (defaults to 2000000000)
+			  top: $(el).data("component-spinner-top") || 10, // Top position relative to parent in px
+			  left: $(el).data("component-spinner-left") || 10 // Left position relative to parent in px
+			});
+			
+			
 		}
 
 	});
