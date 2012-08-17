@@ -652,6 +652,16 @@ components = ({
 			$(el).typeahead({
 				source:component_source,
 			});
+		},
+
+		tree: function(el){
+			$(el).dynatree();
+			if($(el).data("component-tree-width")){
+				$(".dynatree-container",$(el)).width($(el).data("component-tree-width"));
+			}
+			if($(el).data("component-tree-height")){
+				$(".dynatree-container",$(el)).height($(el).data("component-tree-height"));
+			}
 		}
 
 	});

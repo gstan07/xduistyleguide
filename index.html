@@ -61,6 +61,10 @@
 	<script type="text/javascript" src="lib/spin.js/spin.min.js"></script>
 	<script type="text/javascript" src="lib/spin.js/spin.jquery.js"></script>
 	<!--</spinner component>-->
+
+	<!--<tree component>-->
+	<script type="text/javascript" src="lib/dynatree/src/jquery.dynatree.min.js"></script>
+	<!--</tree component>-->
 <!--</compoents JS>-->
 
 
@@ -180,6 +184,7 @@
 				       <li><a href = "#" data-sectionswitch = "tags">Tags Input</a></li>
 				       <li><a href = "#" data-sectionswitch = "spinner">Spinner</a></li>
 				       <li><a href = "#" data-sectionswitch = "typeahead">TypeAhead</a></li>
+				       <li><a href = "#" data-sectionswitch = "tree">Tree View</a></li>
 				    </ul>
 				  </li>
 				  <li class="divider-vertical"></li>
@@ -820,9 +825,9 @@
 						 
 					
 						<span class = "pages">
-							<a href="#"><i class="icon icon-circle-arrow-left"></i></a> 
+							<a href="#"><i class="icon icon-smallarrow-left"></i></a> 
 							<input type="text" value = "1" class="input-mini"/> <span>of 20</span> 
-							<a href="#"><i class="icon icon-circle-arrow-right"></i></a>
+							<a href="#"><i class="icon icon-smallarrow-left-right"></i></a>
 						</span>
 					</td>
 				</tr>
@@ -1964,6 +1969,47 @@ data-component-spinner-left, default: 10 // Left position relative to parent in 
 	<span class="getcode" data-getcode="gc_typeahead2"></span> <label for = "typeahead2">Using url source:</label> 
 	<span id="gc_typeahead2"><input id="typeahead2" type="text" data-component = "typeahead" data-component-typeahead-source-url = "lib/typeahead.txt"/></span><br/>
 	<a href="lib/typeahead.txt" target="blank">url source here</a>
+</div>
+
+<div style = "display:none;padding:5px;" id = "tree" data-section="true">
+	<h1 style = "margin-top:50px;">Tree View</h1>
+	<br/>
+	We use <a href="http://code.google.com/p/dynatree/" target="blank">jQuery Dynatree</a> to enhance an unordered list to a complex tree view<br/><br/>
+	<span class="getcode" data-getcode="gc_tree1"></span>
+	<span id="gc_tree1">
+	<div id="tree" data-component = "tree" data-component-tree-width="250" data-component-tree-height="400">
+    <ul id="treeData" style="display: none;">
+      <li id="id1" title="Look, a tool tip!">item1 with key and tooltip
+      <li id="id2">item2
+      <li id="id3">Folder with some children
+        <ul>
+          <li id="id3.1">Sub-item 3.1
+            <ul>
+              <li id="id3.1.1">Sub-item 3.1.1
+              <li id="id3.1.2">Sub-item 3.1.2
+            </ul>
+          <li id="id3.2">Sub-item 3.2
+            <ul>
+              <li id="id3.2.1">Sub-item 3.2.1
+              <li id="id3.2.2">Sub-item 3.2.2
+            </ul>
+        </ul>
+      <li id="id4" class="expanded">Document with some children (expanded on init)
+        <ul>
+          <li id="id4.1">Sub-item 4.1 (active and focus on init)
+            <ul>
+              <li id="id4.1.1">Sub-item 4.1.1
+              <li id="id4.1.2">Sub-item 4.1.2
+            </ul>
+          <li id="id4.2">Sub-item 4.2
+            <ul>
+              <li id="id4.2.1">Sub-item 4.2.1
+              <li id="id4.2.2">Sub-item 4.2.2
+            </ul>
+        </ul>
+    </ul>
+  </div>
+	</span>
 </div>
 </body>
 </html>
