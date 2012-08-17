@@ -639,6 +639,19 @@ components = ({
 				$($(el).attr("href")).toggleClass("hide");
 				e.preventDefault();
 			});
+		},
+		typeahead: function(el){
+			$.component_source;
+			if($(el).data("component-typeahead-source")){
+				component_source = eval($(el).data("component-typeahead-source"));
+			} else if($(el).data("component-typeahead-source-url")){
+					$.get($(el).data("component-typeahead-source-url"),function(data){
+					$.component_source = eval(data);
+				});
+			}
+			$(el).typeahead({
+				source:component_source,
+			});
 		}
 
 	});

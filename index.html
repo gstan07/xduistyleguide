@@ -29,6 +29,8 @@
 <script src="bootstrap/js/bootstrap-tooltip.js" type="text/javascript"></script>
 <script src="bootstrap/js/bootstrap-popover.js" type="text/javascript"></script>
 <script src="bootstrap/js/bootstrap-tab.js" type="text/javascript"></script>
+<script src="bootstrap/js/bootstrap-typeahead.js" type="text/javascript"></script>
+
 <!--</bootstrap JS components>-->
 
 
@@ -177,6 +179,7 @@
 				       <li><a href = "#" data-sectionswitch = "progress">Progress bars</a></li>
 				       <li><a href = "#" data-sectionswitch = "tags">Tags Input</a></li>
 				       <li><a href = "#" data-sectionswitch = "spinner">Spinner</a></li>
+				       <li><a href = "#" data-sectionswitch = "typeahead">TypeAhead</a></li>
 				    </ul>
 				  </li>
 				  <li class="divider-vertical"></li>
@@ -1949,6 +1952,18 @@ data-component-spinner-left, default: 10 // Left position relative to parent in 
 	<span id="gc_spinner2">
 		<span data-component="spinner" data-component-spinner-radius = "20"></span>
 	</span>
+</div>
+<div style = "display:none;padding:5px;" id = "typeahead" data-section="true">
+	<h1 style = "margin-top:50px;">Typeahead</h1>
+	<br/>
+	This component provide an easy way to auto-complete texfields from local or remote data. It uses Bootstrap typreahead js component.
+	<br/><br/>
+	<span class="getcode" data-getcode="gc_typeahead1"></span> <label for = "typeahead1">Using inline source:</label>
+	<span id="gc_typeahead1"><input id="typeahead1" type="text" data-component = "typeahead" data-component-typeahead-source = "['Baltimore', 'Boston', 'New York']"/></span>
+	<br/><br/>
+	<span class="getcode" data-getcode="gc_typeahead2"></span> <label for = "typeahead2">Using url source:</label> 
+	<span id="gc_typeahead2"><input id="typeahead2" type="text" data-component = "typeahead" data-component-typeahead-source-url = "lib/typeahead.txt"/></span><br/>
+	<a href="lib/typeahead.txt" target="blank">url source here</a>
 </div>
 </body>
 </html>
