@@ -1,3 +1,21 @@
+.popover-title {
+   //padding: 5px 15px;
+    background: @white;
+  .border-radius(@popoverRadius @popoverRadius 0 0);
+  &:empty{
+    display:none;
+  }
+  border-bottom:none;
+ }
+  .popover-content {
+
+  .border-radius(0 0 @popoverRadius @popoverRadius);
+}
+.popover-inner {
+
+  .border-radius(@popoverRadius);
+}
+/*
 .popover{
 	   &.top .arrow    { #popoverArrow > .top(10px,@white,1px solid #dfdfdf); }
   	&.right .arrow  { #popoverArrow > .right(10px,@white,1px solid #dfdfdf);}
@@ -37,3 +55,4 @@
   .border-radius(0 0 @popoverRadius @popoverRadius);
 	background-color: @white;
 }
+*/
