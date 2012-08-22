@@ -422,6 +422,124 @@
 </div>
 <div style = "padding:5px;display:none" id = "forms" data-section="true">
 	<h1 style = "margin-top:50px;">Form Elements</h1>
+
+	<div class = "well">
+		<h3 style="margin-bottom:20px;">Form with horizontal aligned labels</h3>
+		
+		<span id="gc_forms2">
+		<form class = "form-horizontal">
+			<div class = "control-group">
+				<label class="control-label" for = "email3">E-Mail</label>
+				<div class="controls">
+					<input type = "email" id = "email3"/>
+				</div>
+				<div class="controls">
+					<p class="help-block">PIN</p>
+					<input type = "number" id = "misc3" class="input-mini"/>
+				</div>
+				<div class="controls">
+					<p class="help-block">Range: <span id="rangevalue"/></p>
+					<input type="range" name="points" min="1" max="100" id="inputrange" step="1" />
+					<script>
+						$("#rangevalue").html($("#inputrange").val());
+						$("#inputrange").bind("change",function(){
+							$("#rangevalue").html($("#inputrange").val());
+						});
+					</script>
+				</div>
+			</div>
+			<div class = "control-group">
+				<label class="control-label" for = "pass13">Password</label>
+				<div class="controls"><input type = "password" id = "pass13"/></div>
+			</div>
+			<div class = "control-group">
+				<label class="control-label" for = "pass23">Retype password</label>
+				<div class="controls"><input type = "password" id = "pass23"/></div>
+			</div>
+			<div class = "control-group">
+				<label class="control-label" for = "news3">Subscribe to newsletter</label>
+				<div class="controls"><input type = "checkbox" id = "news3" name="checkbox"/></div>
+
+			</div>
+			<div class = "control-group">
+				<label class="control-label" for = "select2">Choose category - Multiple selection (uses <a href="http://harvesthq.github.com/chosen/" target="blank">Chosen</a>)</label>
+				<div class="controls">
+					<select data-component = "dropdown" id = "select3">
+						<option>Category 1</option>
+						<option>Category 2</option>
+						<option>Category 3</option>
+						<option>Category 4</option>
+						<option>Category 5</option>
+						<option>Category 1</option>
+						<option>Category 2</option>
+						<option>Category 3</option>
+						<option>Category 1</option>
+						<option>Category 2</option>
+						<option>Category 3</option>
+						<option>Category 4</option>
+						<option>Category 5</option>
+						<option>Category 1</option>
+						<option>Category 2</option>
+						<option>Category 3</option>
+						<option>Category 1</option>
+						<option>Category 2</option>
+						<option>Category 3</option>
+						<option>Category 4</option>
+						<option>Category 5</option>
+						<option>Category 1</option>
+						<option>Category 2</option>
+						<option>Category 3</option>
+						<option>Category 1</option>
+						<option>Category 2</option>
+						<option>Category 3</option>
+						<option>Category 4</option>
+						<option>Category 5</option>
+						<option>Category 1</option>
+						<option>Category 2</option>
+						<option>Category 3</option>
+					</select>
+				</div>
+			</div>
+			<div class = "control-group">
+				<div class="controls"><input type="submit" class="btn btn-primary" value="Submit"/></div>
+			</div>
+		</form>
+		</span>
+		<span class="getcode" data-getcode="gc_forms2"/>
+	</div>
+
+	<div class = "well">
+		<h3 style="margin-bottom:20px;">Pattern: Form with validation</h3>
+		We use <a href="http://docs.jquery.com/Plugins/Validation" target = "blank">jQuery validator plugin</a> to handle form validation. Get markup here: <span class="getcode" data-getcode="gc_validation1"></span>
+		<ul>
+			<li>The errorneus fields and their coresponend labels turn red</li>
+			<li>An error tooltip is shown above the field.</li>
+		</ul><br/><br/>
+		<span id="gc_validation1">
+		<form class = "form-horizontal" data-validation="validate"  method="post" action="">
+			<div class = "control-group">
+				<label class="control-label" for = "email5">E-Mail</label>
+				<div class="controls">
+					<input type = "email" id = "email5" class = "required email" name = "email"/>
+				</div>
+			</div>
+			<div class = "control-group">
+				<label class="control-label" for = "pass5">Password</label>
+				<div class="controls"><input type = "password" id = "pass5" class = "required" name = "password1"/></div>
+			</div>
+			<div class = "control-group">
+				<label class="control-label" for = "pass6">Retype password</label>
+				<div class="controls"><input type = "password" id = "pass6" class = "required" name = "password2"/></div>
+			</div>
+			<div class = "control-group">
+				<div class="controls"><input type="submit" class="btn btn-primary" value="Go ahead, click me now!"/></div>
+			</div>
+			
+		</form>
+	</span>
+	</div>
+
+	
 	<div class = "well">
 		<h3>Basic form</h3>
 		<span id="gc_forms1">
@@ -626,121 +744,9 @@
 		<span class="getcode" data-getcode="gc_formstates"/>
 	</div>
 
-	<div class = "well">
-		<h3 style="margin-bottom:20px;">Form with horizontal aligned labels</h3>
-		
-		<span id="gc_forms2">
-		<form class = "form-horizontal">
-			<div class = "control-group">
-				<label class="control-label" for = "email3">E-Mail</label>
-				<div class="controls">
-					<input type = "email" id = "email3"/>
-				</div>
-				<div class="controls">
-					<p class="help-block">PIN</p>
-					<input type = "number" id = "misc3" class="input-mini"/>
-				</div>
-				<div class="controls">
-					<p class="help-block">Range: <span id="rangevalue"/></p>
-					<input type="range" name="points" min="1" max="100" id="inputrange" step="1" />
-					<script>
-						$("#rangevalue").html($("#inputrange").val());
-						$("#inputrange").bind("change",function(){
-							$("#rangevalue").html($("#inputrange").val());
-						});
-					</script>
-				</div>
-			</div>
-			<div class = "control-group">
-				<label class="control-label" for = "pass13">Password</label>
-				<div class="controls"><input type = "password" id = "pass13"/></div>
-			</div>
-			<div class = "control-group">
-				<label class="control-label" for = "pass23">Retype password</label>
-				<div class="controls"><input type = "password" id = "pass23"/></div>
-			</div>
-			<div class = "control-group">
-				<label class="control-label" for = "news3">Subscribe to newsletter</label>
-				<div class="controls"><input type = "checkbox" id = "news3" name="checkbox"/></div>
+	
 
-			</div>
-			<div class = "control-group">
-				<label class="control-label" for = "select2">Choose category - Multiple selection (uses <a href="http://harvesthq.github.com/chosen/" target="blank">Chosen</a>)</label>
-				<div class="controls">
-					<select data-component = "dropdown" id = "select3">
-						<option>Category 1</option>
-						<option>Category 2</option>
-						<option>Category 3</option>
-						<option>Category 4</option>
-						<option>Category 5</option>
-						<option>Category 1</option>
-						<option>Category 2</option>
-						<option>Category 3</option>
-						<option>Category 1</option>
-						<option>Category 2</option>
-						<option>Category 3</option>
-						<option>Category 4</option>
-						<option>Category 5</option>
-						<option>Category 1</option>
-						<option>Category 2</option>
-						<option>Category 3</option>
-						<option>Category 1</option>
-						<option>Category 2</option>
-						<option>Category 3</option>
-						<option>Category 4</option>
-						<option>Category 5</option>
-						<option>Category 1</option>
-						<option>Category 2</option>
-						<option>Category 3</option>
-						<option>Category 1</option>
-						<option>Category 2</option>
-						<option>Category 3</option>
-						<option>Category 4</option>
-						<option>Category 5</option>
-						<option>Category 1</option>
-						<option>Category 2</option>
-						<option>Category 3</option>
-					</select>
-				</div>
-			</div>
-			<div class = "control-group">
-				<div class="controls"><input type="submit" class="btn btn-primary" value="Submit"/></div>
-			</div>
-		</form>
-		</span>
-		<span class="getcode" data-getcode="gc_forms2"/>
-	</div>
-
-	<div class = "well">
-		<h3 style="margin-bottom:20px;">Pattern: Form with validation</h3>
-		We use <a href="http://docs.jquery.com/Plugins/Validation" target = "blank">jQuery validator plugin</a> to handle form validation. Get markup here: <span class="getcode" data-getcode="gc_validation1"></span>
-		<ul>
-			<li>The errorneus fields and their coresponend labels turn red</li>
-			<li>An error tooltip is shown above the field.</li>
-		</ul><br/><br/>
-		<span id="gc_validation1">
-		<form class = "form-horizontal" data-validation="validate"  method="post" action="">
-			<div class = "control-group">
-				<label class="control-label" for = "email5">E-Mail</label>
-				<div class="controls">
-					<input type = "email" id = "email5" class = "required email" name = "email"/>
-				</div>
-			</div>
-			<div class = "control-group">
-				<label class="control-label" for = "pass5">Password</label>
-				<div class="controls"><input type = "password" id = "pass5" class = "required" name = "password1"/></div>
-			</div>
-			<div class = "control-group">
-				<label class="control-label" for = "pass6">Retype password</label>
-				<div class="controls"><input type = "password" id = "pass6" class = "required" name = "password2"/></div>
-			</div>
-			<div class = "control-group">
-				<div class="controls"><input type="submit" class="btn btn-primary" value="Go ahead, click me now!"/></div>
-			</div>
-			
-		</form>
-	</span>
-	</div>
+	
 	
 </div>
 
