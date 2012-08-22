@@ -84,7 +84,8 @@ components = ({
 		},
 		popover: function(el){
 
-
+			var isVisible = false;
+			var clickedAway = false;
 
 			el.popover({
 				"trigger":el.data("popover-trigger"),
@@ -92,34 +93,19 @@ components = ({
 				"title":el.attr("title") || el.data("popover-title"),
 				"placement":el.data("popover-placement"),
 			});
-
-			//addinch click behaviour for the component
-			if(el.data("popover-trigger") == "click"){
-
-				$(el).click(function(e){
-					
-					$(this).popover("show");
-					
-
-					$(".popover").click(function(e){
-						e.stopPropagation();
-					});
-					e.preventDefault();
-					e.stopPropagation();
-				});
-			}
-			if(el.data("popover-trigger") == "focus"){
+			if(el.data("popover-trigger") == "focus" || el.data("popover-trigger") == "click"){
 				$(el).bind("focus click",function(e){
-
+					$("[data-component = 'popover']").not(this).popover('hide');
 					e.stopPropagation();
 					e.preventDefault();
 				});
 			}
 			
 			$("body").bind("click.popover",function(){
-				$(".popover").hide();
+				$("[data-component = 'popover']").popover('hide');
 			});
-	
+
+			
 		},
 		sidebar: function(el){
 			
