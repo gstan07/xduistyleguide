@@ -713,8 +713,13 @@
 
 	<div class = "well">
 		<h3 style="margin-bottom:20px;">Pattern: Form with validation</h3>
-		
-		<form class = "form-horizontal" data-validation = "validate" method="post" action="">
+		We use jQuery validator plugin to handle form validation. Get markup here: <span class="getcode" data-getcode="gc_validation1"></span>
+		<ul>
+			<li>The errorneus fields and their coresponend labels turn red</li>
+			<li>An error tooltip is shown above the field.</li>
+		</ul><br/><br/>
+		<span id="gc_validation1">
+		<form class = "form-horizontal" data-validation="validate"  method="post" action="">
 			<div class = "control-group">
 				<label class="control-label" for = "email5">E-Mail</label>
 				<div class="controls">
@@ -730,10 +735,11 @@
 				<div class="controls"><input type = "password" id = "pass6" class = "required" name = "password2"/></div>
 			</div>
 			<div class = "control-group">
-				<div class="controls"><input type="submit" class="btn btn-primary" value="Submit"/></div>
+				<div class="controls"><input type="submit" class="btn btn-primary" value="Go ahead, click me now!"/></div>
 			</div>
 			
 		</form>
+	</span>
 	</div>
 	
 </div>

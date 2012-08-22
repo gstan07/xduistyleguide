@@ -2,6 +2,23 @@
   &.top{ 
     margin-top:-10px;
   }
+  &.validation_tooltip{
+    display:block;
+    width:200px;
+    padding:10px;
+    background-color:@grayDark;
+    border-color:@black;
+    color:@grayLighter;
+    .arrow{
+      border-top-color: @grayDark;
+    }
+    p{
+      margin:0;padding:0;
+    }
+    top: 0px;
+
+    left: 0px;
+  }
 }
 .popover-title {
    //padding: 5px 15px;
@@ -10,7 +27,7 @@
   &:empty{
     display:none;
   }
-  border-bottom:none;
+  //border-bottom:none;
  }
   .popover-content {
 

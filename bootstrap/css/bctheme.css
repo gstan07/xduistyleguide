@@ -804,7 +804,9 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{*padding-top:1px;*padding-
 .popover.bottom .arrow{top:-10px;left:50%;margin-left:-10px;border-width:0 10px 10px;border-bottom-color:#ffffff;}.popover.bottom .arrow:after{border-width:0 11px 11px;border-bottom-color:rgba(0, 0, 0, 0.25);top:-1px;left:-11px;}
 .popover.left .arrow{top:50%;right:-10px;margin-top:-10px;border-width:10px 0 10px 10px;border-left-color:#ffffff;}.popover.left .arrow:after{border-width:11px 0 11px 11px;border-left-color:rgba(0, 0, 0, 0.25);bottom:-11px;right:-1px;}
 .popover.top{margin-top:-10px;}
-.popover-title{background:#ffffff;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;border-bottom:none;}.popover-title:empty{display:none;}
+.popover.validation_tooltip{display:block;width:200px;padding:10px;background-color:#333333;border-color:#000000;color:#eeeeee;top:0px;left:0px;}.popover.validation_tooltip .arrow{border-top-color:#333333;}
+.popover.validation_tooltip p{margin:0;padding:0;}
+.popover-title{background:#ffffff;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;}.popover-title:empty{display:none;}
 .popover-content{-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px;}
 .popover-inner{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
 .thumbnails{margin-left:-20px;list-style:none;*zoom:1;}.thumbnails:before,.thumbnails:after{display:table;content:"";line-height:0;}
@@ -1442,5 +1444,5 @@ span.dynatree-drop-target.dynatree-drop-accept a{background-color:#3169C6 !impor
 span.dynatree-drop-target.dynatree-drop-reject{}
 span.custom1 a{background-color:maroon;color:yellow;}
 .hint_container{position:relative;}.hint_container .icon{cursor:pointer;margin-left:10px;}
-form[data-validation='validate'] .tooltip_container{position:relative;}
+.tooltip_container{position:relative;}
 form[data-validation='validate'] label[generated='true']{display:block;background-color:#000000;padding:10px;width:200px;color:#ffffff;position:absolute;border-radius:5px;display:none;bottom:0px;}
