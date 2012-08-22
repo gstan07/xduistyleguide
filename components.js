@@ -398,7 +398,10 @@ components = ({
 		},
 		modalTrigger: function(el){
 			el.click(function(){
-				$(el.attr("href")).modal("show");	
+				$(el.attr("href")).modal({
+					//backdrop:'static',
+					//keyboard:false,
+				});	
 			});
 			
 		},
