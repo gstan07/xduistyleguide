@@ -1,0 +1,828 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"too",
+				"validation_tooltip"
+			],
+			[
+				"validation",
+				"validation_tooltip"
+			],
+			[
+				"gra",
+				"grayDark"
+			],
+			[
+				"err",
+				"errorList"
+			],
+			[
+				"in",
+				"inputElement"
+			],
+			[
+				"show",
+				"showTooltip"
+			],
+			[
+				"valida",
+				"validationtooltip"
+			],
+			[
+				"tooltip",
+				"tooltipContainer"
+			],
+			[
+				"hide",
+				"hideTooltip"
+			],
+			[
+				"tool",
+				"tooltip"
+			],
+			[
+				"er",
+				"errorClass"
+			],
+			[
+				"error",
+				"errorField"
+			],
+			[
+				"compo",
+				"component_source"
+			],
+			[
+				"tab",
+				"tableBorder"
+			],
+			[
+				"togg",
+				"toggleClass"
+			],
+			[
+				"of",
+				"offel"
+			],
+			[
+				"one",
+				"onel"
+			],
+			[
+				"on",
+				"ontext"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"el_",
+				"el_chars_nume"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"butto",
+				"buttonBorderRadius"
+			],
+			[
+				"save",
+				"saveWebAppSettings"
+			],
+			[
+				"webap",
+				"webappName"
+			],
+			[
+				"weba",
+				"webappName"
+			],
+			[
+				"We",
+				"WebApp"
+			],
+			[
+				"se",
+				"SettingsView"
+			],
+			[
+				"co",
+				"context"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"clas",
+				"className"
+			],
+			[
+				"bacl",
+				"background-color"
+			],
+			[
+				"list-sty",
+				"list-style-type"
+			],
+			[
+				"appen",
+				"appendTo"
+			],
+			[
+				"new",
+				"newFieldView"
+			],
+			[
+				"url",
+				"url_segment"
+			],
+			[
+				"ge",
+				"generatePostPills"
+			],
+			[
+				"field",
+				"field_segment"
+			],
+			[
+				"data",
+				"data-field-segment"
+			],
+			[
+				"fir",
+				"first_url_segment"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"inp",
+				"inputBorderRadius"
+			],
+			[
+				"ar",
+				"arrowWidth"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"curent",
+				"curent_filters"
+			],
+			[
+				"curen",
+				"curent_filters"
+			],
+			[
+				"filterc",
+				"filterChangeEvent"
+			],
+			[
+				"data-fi",
+				"data-component-filter-element"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"cur",
+				"curent_filters"
+			],
+			[
+				"upda",
+				"updatingtable"
+			],
+			[
+				"data-fil",
+				"data-component-filter-element"
+			],
+			[
+				"data-com",
+				"data-component-filter-element"
+			],
+			[
+				"filter",
+				"filter_value"
+			],
+			[
+				"filte",
+				"filters"
+			],
+			[
+				"clear",
+				"clearFilters"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"accord",
+				"accordion-inner"
+			],
+			[
+				"has",
+				"hasClass"
+			],
+			[
+				"accorde",
+				"accordeon_id"
+			],
+			[
+				"acc",
+				"accordeon_id"
+			],
+			[
+				"ac",
+				"accordion-inner"
+			],
+			[
+				"accor",
+				"accordion_container"
+			],
+			[
+				"accordio",
+				"accordion_container"
+			],
+			[
+				"side",
+				"sidebar_container"
+			],
+			[
+				"close",
+				"closest_toggle"
+			],
+			[
+				"closest",
+				"closest_toggle"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"accordion",
+				"accordion-toggle"
+			],
+			[
+				"pretty",
+				"prettyPrint"
+			],
+			[
+				"code",
+				"codeToShow"
+			],
+			[
+				"html",
+				"htmlEncode"
+			],
+			[
+				"fa",
+				"fakeEl"
+			],
+			[
+				"inpu",
+				"inputBorder"
+			],
+			[
+				"defau",
+				"defaultInputWidth"
+			],
+			[
+				"not",
+				"not_valid"
+			],
+			[
+				"ver",
+				"very_small_font_size"
+			],
+			[
+				"fluid",
+				"fluidgrid"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"off",
+				"offset"
+			],
+			[
+				"uploadS",
+				"uploadStatusContainer"
+			],
+			[
+				"prev",
+				"prevButtonOffset"
+			],
+			[
+				"use",
+				"use_scroll"
+			],
+			[
+				"set",
+				"setTimeout"
+			],
+			[
+				"vertical",
+				"vertical-align"
+			],
+			[
+				"pop",
+				"popupCloseButton"
+			],
+			[
+				"pro",
+				"progressLabel"
+			],
+			[
+				"la",
+				"layout_wrapper"
+			],
+			[
+				"rtab",
+				"rtabWidth"
+			],
+			[
+				"tabsc",
+				"tabsContainerWidth"
+			],
+			[
+				"tabsCo",
+				"tabsContainerOffset"
+			],
+			[
+				"las",
+				"lastTabInView"
+			],
+			[
+				"lastTa",
+				"lastTabInView"
+			],
+			[
+				"scrol",
+				"scrollDistance"
+			],
+			[
+				"tabsco",
+				"tabsContainerWidth"
+			],
+			[
+				"last",
+				"lastTabWidth"
+			],
+			[
+				"exis",
+				"existentTabs"
+			],
+			[
+				"added",
+				"addedTab"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"addedTab",
+				"addedTabOffset"
+			],
+			[
+				"addedTa",
+				"addedTabOffset"
+			],
+			[
+				"pos",
+				"position"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/LESS-build/LESS.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Build: Build"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 174.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/adminusers/templates/details.htm",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_custom.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/popovers.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_tooltip.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/dropdowns.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/variables.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_mixins.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_variables.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_dropdowns.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_button-groups.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_popovers.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/components.js",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/index.html",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/lib/validation/init.validation.js",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_buttons.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/type.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_accordion.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/bootstrap.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/css/bctheme.css",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/grid.less",
+		"/C/Users/gestan/AppData/Roaming/Sublime Text 2/Packages/LESS-build/LESS.sublime-build",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/alerts.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/bootstrap.css",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/breadcrumbs.less",
+		"/C/Users/gestan/AppData/Roaming/Sublime Text 2/Packages/LESS-build/LESS-rewriteDir.sublime-build-choice",
+		"/C/Users/gestan/AppData/Roaming/Sublime Text 2/Packages/LESS-build/LESS-normal.sublime-build-choice",
+		"/C/Users/gestan/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/gestan/AppData/Roaming/Sublime Text 2/Packages/LESS-build/package-metadata.json",
+		"/C/Users/gestan/AppData/Roaming/Sublime Text 2/Packages/User/HTML.sublime-settings",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/.travis.yml",
+		"/C/Users/gestan/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/presentation.js",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_tables.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/lib/spin.js/spin.jquery.js",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/lib/dynatree/src/skin/ui.dynatree.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_sprites.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/mixins.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/sprites.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/lib/typeahead.txt",
+		"/C/work/bc/my workplace/BC/trunk/Web/AdminV4/app/modules/adminusers/templates/details.htm",
+		"/C/work/bc/my workplace/BC/trunk/Web/AdminV4/app/modules/components/module.js",
+		"/C/work/bc/my workplace/BC/trunk/Web/AdminV4/assets/css/common.less",
+		"/C/work/bc/my workplace/BC/trunk/Web/AdminV4/assets/css/theme.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/button-groups.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_nav.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_forms.less",
+		"/C/work/bc/my workplace/BC/environment_variables.txt",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_navbar.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/buttons.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/lib/chosen/chosen.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/forms.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/lib/tags/jquery.tagsinput.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/lib/tags/jquery.tagsinput.js",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/fortawesome-icons/font-awesome.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/lib/daterangepicker/css/ui.daterangepicker.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/lib/tags/autocomplete.mock.txt",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/lib/jQueryUI/theme.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/lib/daterangepicker/js/daterangepicker.jQuery.js",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_progress-bars.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_modals.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/modals.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/less/themes/ccmblue/theme_type.less",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/lib/daterangepicker/js/date.js",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/lib/gcp/prettify.js",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/Makefile",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/bootstrap/README.md",
+		"/C/work/2012/BC UI StyleGuide/xduistyleguide/index.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/webapps/views/detailWebappView.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/webapps/views/detailTableView.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/webapps/templates/detailWebAppTemplate.htm",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/webapps/templates/detailTableTemplate.htm",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/webapps/module.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/webapps/templates/tableContentTemplate.htm",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/assets/css/webapps.less",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/assets/css/theme.less",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/webapps/views/tableContentView.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/webapps/views/settingsView.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/webapps/templates/settings.htm",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/emailusers/templates/list.htm",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/system/views/popup.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/emailusers/views/delete.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/emailusers/templates/delete.htm",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/emailusers/views/list.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/emailusers/module.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/webapps/views/addWebappView.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/webapps/templates/delete.htm",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/assets/js/libs/chosen.jquery.min.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/assets/css/variables.less",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/emailusers/views/create.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/assets/css/common.less",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/components/module.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/system/views/partial.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/webapps/templates/deleteListViewTemplate.htm",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/webapps/views/deteleListView.js",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/webapps/templates/addWebAppTemplate.htm",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/emailusers/templates/details.htm",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/adminusers/templates/list.htm",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminV4/app/modules/adminusers/templates/delete.htm",
+		"/C/work/bc/my workplace/BC/branches/bc.next/bc-legacy/Web/AdminConsole/Web.config",
+		"/C/work/bc/my workplace/BC/trunk/Web/AdminConsole/Web.config",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/bootstrap.less",
+		"/C/work/2012/BC UI StyleGuide/repo/lib/daterangepicker/index.html",
+		"/C/work/2012/BC UI StyleGuide/repo/index.js",
+		"/C/work/2012/BC UI StyleGuide/repo/index.html",
+		"/C/work/2012/BC UI StyleGuide/repo/README",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/mixins.less",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/themes/ccmblue/theme_popovers.less",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/themes/ccmblue/theme_custom.less",
+		"/C/work/2012/BC UI StyleGuide/index.js",
+		"/C/work/2012/BC UI StyleGuide/lib/chosen/chosen.less",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/themes/ccmblue/theme_accordion.less",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/themes/ccmblue/theme_mixins.less",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/variables.less",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/navs.less",
+		"/C/work/2012/BC UI StyleGuide/index.html",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/themes/ccmblue/theme_nav.less",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/themes/ccmblue/theme_buttons.less",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/themes/ccmblue/theme_modals.less",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/themes/ccmblue/theme_type.less",
+		"/C/work/bc/my workplace/BC/trunk/Web/AdminV4/app/modules/playground/module.js",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/type.less",
+		"/C/work/bc/my workplace/BC/trunk/Web/AdminV4/assets/css/chosen.less",
+		"/C/work/2012/BC UI StyleGuide/teste.html",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/utilities.less",
+		"/C/work/2012/BC UI StyleGuide/lib/gcp/prettify.css",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/forms.less",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/themes/ccmblue/theme_forms.less",
+		"/C/work/2012/BC UI StyleGuide/bootstrap/less/popovers.less"
+	],
+	"find":
+	{
+		"height": 47.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"form elemen",
+			"dark",
+			"form elements",
+			"popover",
+			"radius",
+			"font",
+			"14px",
+			"form wit",
+			"validation",
+			"form eleme",
+			"form elemen",
+			"typeki",
+			"myria",
+			"modal",
+			"lists",
+			"hover",
+			"focusefd",
+			"red",
+			"ul",
+			"dynatree-no",
+			"-active",
+			"last",
+			"folder",
+			"lasts",
+			"expander",
+			"folder",
+			"expander",
+			"connect",
+			"connector",
+			"folder",
+			"connector",
+			"//",
+			"folder",
+			".gif",
+			"folder",
+			"-icon",
+			"<table",
+			"<tab",
+			"lists",
+			">lis",
+			"icon",
+			"connecto",
+			"expander",
+			"font",
+			".gif",
+			"titl",
+			"tooltips and",
+			") ||",
+			"$(el).data(\"",
+			"spin.",
+			"tags inp",
+			"jquer",
+			"<table",
+			"<tab",
+			"\"grid",
+			"\"tables",
+			"modal",
+			"caret",
+			"form ele",
+			"icon-sea",
+			"@{fontAwesomePath}",
+			"quiet",
+			"inse",
+			"quiet",
+			"tables",
+			"qui",
+			"clos",
+			"box-sh",
+			"gradien",
+			"min-",
+			"opac",
+			"barStandard progress bar",
+			"datera",
+			"daterange",
+			"anim",
+			"title",
+			"datepic",
+			"prev",
+			"icon",
+			"button",
+			"but",
+			"button",
+			"icon",
+			"triangle",
+			"anim",
+			"fade",
+			"triangle",
+			"animate",
+			"icon",
+			"font-fa",
+			"ui-wid",
+			"radius",
+			"jquery",
+			"prettyprint",
+			"datera",
+			"labe",
+			"get",
+			"console",
+			"webappn",
+			"tablena",
+			"contex",
+			"context",
+			"iscrea",
+			"render",
+			"close",
+			"dataso",
+			"showdele",
+			"delete",
+			"console",
+			"addwebappv",
+			"addwe",
+			".gradi",
+			"chose",
+			"insertedInDocument",
+			"dropdow",
+			"inse",
+			"hint",
+			"insertedInDocument",
+			"field",
+			"generateite",
+			"arrow",
+			"tabs",
+			"bicon.set",
+			"settin",
+			"bicon.set",
+			"settin",
+			"bicon.set",
+			"c:"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" default:",
+			"",
+			"font",
+			"bar\nbar",
+			"../img/jQueryUI/",
+			"quiet",
+			"'../../lib/chosen/chosen",
+			" href=\"#\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 154.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 80.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 241.0,
+	"status_bar_visible": false
+}
